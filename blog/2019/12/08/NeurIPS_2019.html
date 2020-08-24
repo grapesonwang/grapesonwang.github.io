@@ -1,0 +1,622 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+
+
+
+	<title>25 OATML Conference and Workshop papers at NeurIPS 2019 | OATML | Oxford Applied and Theoretical Machine Learning Group</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45108170-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-45108170-4');
+	</script>
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<meta name="description" content="We are glad to share the following 25 papers by OATML authors and collaborators to be presented at this NeurIPS conference and workshops." />
+	<meta name="keywords" content="25 OATML Conference and Workshop papers at NeurIPS 2019 | OATML | Oxford Applied and Theoretical Machine Learning Group,OATML,Oxford,Machine learning,ML,Artificial intelligence,AI,Deep learning,DL,Bayesian deep learning,BDL,Bayesian,Bayesian modelling,Probabilistic modelling,Research group,Resarch,Fundamental Research,Pragmatic research,Yarin,Gal,Yarin Gal,yaringal" />
+	<meta charset="utf-8" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://oatml.cs.ox.ac.uk/assets/css/main.css" />
+
+    <link rel="apple-touch-icon-precomposed" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="https://oatml.cs.ox.ac.uk/images/favicon.ico">
+
+	<meta property="og:title" content="25 OATML Conference and Workshop papers at NeurIPS 2019 | OATML | Oxford Applied and Theoretical Machine Learning Group" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://oatml.cs.ox.ac.uk//images/vancouver_image.jpg" />
+	<meta property="og:description" content="We are glad to share the following 25 papers by OATML authors and collaborators to be presented at this NeurIPS conference and workshops." />
+	<style type="text/css">
+		.my_headline {
+			color: inherit !important;
+			font-weight: inherit;
+			text-decoration: inherit;
+		}
+		/*.my_logo {display: block !important; margin: auto; padding: 20px 0px 20px 0px; width: 50%;}*/
+		.my_logo {
+			display: block !important;
+			margin: auto;
+			padding: 20px 0px 20px 0px;
+			max-height: 70%;
+		}
+		.banner > article .inner {height: 100%}
+		.banner > article .inner > header {height: 85%}
+		.banner_top {height: 15%}
+		body.is-mobile .banner_top {height: 5%}
+		@media screen and (max-width: 980px) {
+			.banner_top {height: 10%}
+			.my_logo {max-height: 50%}
+		}
+		.my_box_image {overflow: hidden; max-height: 50px;}
+		.my_news_div {padding: 0 !important}
+		.my_news_div div {margin: 0em 1em 1em 1em}
+		.my_news_div div header h4 {
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #484848 !important;
+			word-spacing: 3pt;
+		}
+		.my_news_div div header p {
+			font-size: 0.9em;
+			color: #aaa !important;
+			margin-top: -0.6em;
+			margin-bottom: 0.1em;
+		}
+		.my_news_span {
+			padding: 0 !important;
+			background-color: transparent !important;
+		}
+		.my_news_span img {
+			border-radius: 100%;
+			width: 100%;
+			border: solid 0.5em rgba(144, 144, 144, 0.25);
+		}
+		div #my_div_grid:nth-child(2n) {
+			background-color: rgba(0, 0, 0, 0.075);
+		}
+		div #my_div_grid {
+			padding: 1rem 0rem 1rem 0rem;
+			margin: 0;
+		}
+		.wrapper.style3.pageheader {
+			background-size: 100% !important;
+			background-position: top !important;
+			background-image: url('https://oatml.cs.ox.ac.uk/images/bg_crop.jpg') !important;
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			.wrapper.style3.pageheader {background-size: 200% !important;}
+			.ox-link {display: none;}
+			.group-title-link {display: none;}
+			.group-title-link-short {display: inline;}
+			div.my_news_div div.fit {
+				text-align : inherit !important;
+			}
+			span.my_news_span.image.right {
+				float : left;
+				margin: 0 1.5rem 1rem 0;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 435px) {
+			.my_header {
+				min-height: 120pt !important;
+			}
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) {
+			.group-title-link-short {display: none;}
+			.group-title-link {
+				display: inline;
+				vertical-align: bottom !important;
+				border-left: 2px solid white;
+				height: 500px;
+				padding: 0px 0px 0px 10px;
+				margin: 0px 0px 0px 10px;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_mobile.jpg') !important;
+				}
+			
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) and (max-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2.jpg') !important;
+				}
+			
+		}
+		/* Huge screens */
+		@media screen and (min-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_huge.jpg') !important;
+				}
+			
+		}
+		/* Mobile screens */
+		@media screen and (max-height: 600px) {
+			.indicators {display: none;}
+		}
+	</style>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+					<header id="header" class="alt">
+				<div class="logo">
+					<img src="https://oatml.cs.ox.ac.uk/images/cs_logo.png" class="ox-link" style="height: 58px; vertical-align: top !important" alt="University of Oxford Department of Computer Science" usemap="#compscimap" />
+					<map name="compscimap" id="compscimap">
+                                <area shape="rect" coords="0,0,55,55" href="http://www.ox.ac.uk/" alt="University of Oxford" title="University of Oxford"/>
+                                <area shape="rect" coords="65,0,170,55" href="http://www.cs.ox.ac.uk/" alt="Department of Computer Science - Home" title="Department of Computer Science - Home"/>
+                    </map>
+					<a href="../../../../index.html" class="group-title-link">
+						<!-- <img src="images/logo.png" style="height: 55px" alt="Group Home"> -->
+						Group Home
+					</a>
+					<a href="../../../../index.html" class="group-title-link-short">
+						Home
+					</a>
+				</div>
+				<a href="NeurIPS_2019.html#menu">Menu</a>
+			</header>
+
+
+		<!-- Nav -->
+					<nav id="menu">
+				<ul class="links">
+					<li><a href="../../../../index.html">Home</a></li>
+					<li><a href="../../../../news.html">News</a></li>
+					<li><a href="../../../../publications.html">Publications</a></li>
+					<li><a href="../../../../code.html">Reproducibility and Code</a></li>
+					<li><a href="../../../../blog.html">Blog</a></li>
+					<li><a href="../../../../members.html">Group Members</a></li>
+					<!-- <li><a href="research.html">Research Themes</a></li> -->
+					<li><a href="https://oatml.cs.ox.ac.uk/apply.html">Apply to the Group</a></li>
+					<!-- <li><a href="contact.html">Contact</a></li> -->
+				</ul>
+			</nav>
+
+
+		<!-- One -->
+					<section id="One" class="wrapper style3 pageheader">
+				<div class="inner">
+					<header class="align-center">
+						<p>Oxford Applied and Theoretical Machine Learning Group</p>
+						<h1>OATML</h1>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header id="title" class="align-center">
+								<p>25 OATML Conference and Workshop papers at NeurIPS 2019</p>
+								<!-- <h2>Lorem ipsum dolor</h2> -->
+							</header>
+							
+<a href="../../../../members/angelos_filos/index.html">Angelos Filos</a>, <a href="../../../../members/sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../../../../members/tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../../../../members/zac_kenton/index.html">Zac Kenton</a>, <a href="../../../../members/lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>, <a href="../../../../members/andreas_kirsch/index.html">Andreas Kirsch</a>, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>, <a href="../../../../members/joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>,
+<span>08 Dec 2019</span>
+<div class="12u 12u$(small)" style="margin-left: auto; margin-right: auto;">
+	<span class="image main"><img src="https://oatml.cs.ox.ac.uk//images/vancouver_image.jpg" alt="" /></span>
+</div>
+<!-- <div class="inner">
+    <header class="align-left">
+        <h4><a href="https://oatml.cs.ox.ac.uk/blog.html">Back to all posts...</a></h4>
+    </header>
+</div> -->
+<p>
+<p>We are glad to share the following 25 papers by OATML authors and collaborators to be presented at this NeurIPS conference and workshops:</p>
+
+<p><strong><a href="https://nips.cc/Conferences/2019/Schedule?showEvent=13801">BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning</a></strong>
+<br />
+<a href="../../../../members/andreas_kirsch/index.html">Andreas Kirsch</a>, <a href="../../../../members/joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+<br />
+When: Thu Dec 12th 10:45 AM – 12:45 PM
+<br />
+Where: East Exhibition Hall B + C #1</p>
+
+<p><strong><a href="https://nips.cc/Conferences/2019/Schedule?showEvent=15810">VIREL: A Variational Inference Framework for Reinforcement Learning</a></strong>
+<br />
+Matthew Fellows, Anuj Mahajan, <a href="../../../../members/tim_rudner/index.html">Tim G. J. Rudner</a>, Shimon Whiteson
+<br />
+<strong><span style="color:red">Spotlight</span></strong> (Wed Dec 11th 10:25 – 10:30 AM @ West Exhibition Hall A)
+<br />
+When: Wed Dec 11th 10:45 AM – 12:45 PM
+<br />
+Where: East Exhibition Hall B + C #214</p>
+
+<p><strong><a href="https://nips.cc/Conferences/2019/Schedule?showEvent=14375">On the Fairness of Disentangled Representations</a></strong>
+<br />
+Francesco Locatello, Gabriele Abbati, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, Stefan Bauer, Bernhard Schölkopf, Olivier Bachem
+<br />
+When: Thu Dec 12th 05:00 – 07:00 PM
+<br />
+Where: East Exhibition Hall B + C #34</p>
+
+<p><strong><a href="https://nips.cc/Conferences/2019/Schedule?showEvent=13591">A Geometric Perspective on Optimal Representations for Reinforcement Learning</a></strong>
+<br />
+Marc Bellemare, Will Dabney, Robert Dadashi, Adrien Ali Taiga, Pablo Samuel Castro, Nicolas Le Roux, Dale Schuurmans, Tor Lattimore, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>
+<br />
+When: Wed Dec 11th 10:45 AM – 12:45 PM
+<br />
+Where: East Exhibition Hall B + C #200</p>
+
+<p><strong><a href="https://nips.cc/Conferences/2019/Schedule?showEvent=15743">Variational Bayesian Optimal Experimental Design</a></strong>
+<br />
+Adam Foster, Martin Jankowiak, Elias Bingham, Paul Horsfall, Yee Whye Teh, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, Noah Goodman
+<br />
+<strong><span style="color:red">Spotlight</span></strong> (Tue Dec 10th 04:40 – 04:45 PM @ West Ballroom C)
+<br />
+When: Tue Dec 10th 05:30 – 07:30 PM
+<br />
+Where: East Exhibition Hall B + C #173</p>
+
+<p><strong><a href="https://arxiv.org/abs/1910.06521">Machine Learning for Generalizable Prediction of Flood Susceptibility</a></strong>
+<br />
+Chelsea Sidrane (Stanford University); Dylan J Fitzpatrick (Carnegie Mellon University); Andrew Annex (Johns Hopkins University); Diane O’Donoghue (kx); Piotr Bilinksi (University of Warsaw, University of Oxford); <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a> (University of Oxford)
+<br />
+<strong><span style="color:red">Spotlight talk</span></strong> (Friday, 14:30-15:30)
+<br />
+When: 17:15-18:00, Friday, December 13
+<br />
+Where: <a href="https://www.hadr.ai/accepted-papers">Artificial Intelligence for Humanitarian Assistance and Disaster Response (AI+HADR) Workshop 2019</a>, 
+Vancouver Convention Center, West 217-219</p>
+
+<p><strong><a href="https://arxiv.org/abs/1910.03019">Flood Detection On Low Cost Orbital Hardware</a></strong>
+<br />
+Joshua Veitch-Michaelis (Liverpool John Moores University); Gonzalo Mateo-Garcia (University of Valencia); Silviu Oprea (University of Edinburgh); <a href="../../../../members/lewis_smith/index.html">Lewis Smith</a> (University of Oxford); Atilim Gunes Baydin (University of Oxford); Dietmar Backes (University of Luxembourg); <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a> (University of Oxford); Guy Schumann (CU Boulder)
+<br />
+<strong><span style="color:red">Spotlight talk</span></strong> (Friday, 14:30-15:30)
+<br />
+When: 17:15-18:00, Friday, December 13
+<br />
+Where: <a href="https://www.hadr.ai/accepted-papers">Artificial Intelligence for Humanitarian Assistance and Disaster Response (AI+HADR) Workshop 2019</a>, 
+Vancouver Convention Center, West 217-219</p>
+
+<p><strong><a href="https://docs.google.com/spreadsheets/d/1PiGejHWQlBKDb8gM_l_PCRujzJUlSS86d0sn0CLCEEM/edit#gid=2143618522">Adversarial recovery of agent rewards from latent spaces of the limit order book</a></strong>
+<br />
+Jacobo Roa Vicens (University College London); Yuanbo Wang (Twitter); Virgile Mison (JP Morgan); <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a> (University of Oxford); Ricardo Silva (University College London)
+<br />
+When: 4pm - 5pm, Friday, December 13, 2019
+<br />
+Where: <a href="https://sites.google.com/view/robust-ai-in-fs-2019">NeurIPS 2019 Workshop on Robust AI in Financial Services: Data, Fairness, Explainability, Trustworthiness, and Privacy</a>,
+Vancouver Convention Center</p>
+
+<p><strong><a href="https://neurips2019creativity.github.io/doc/Location%20Conditional%20Image%20Generation%20using%20Generative%20Adversarial%20Networks.pdf">Location Conditional Image Generation using Generative Adversarial Networks</a></strong>
+<br />
+Mayur Saxena, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a> and <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+<br />
+When: 5:00 PM, Saturday December 14
+<br />
+Where: <a href="https://neurips2019creativity.github.io/">Machine Learning for Creativity and Design NeurIPS 2019 Workshop</a>, West 223+224, Vancouver, Canada</p>
+
+<p><strong><a href="https://ml4ad.github.io/files/papers/Robust%20Imitative%20Planning:%20Planning%20from%20Demonstrations%20Under%20Uncertainty.pdf">Robust Imitative Planning: Planning from Demonstrations Under Uncertainty</a></strong>
+<br />
+<a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a><em>, <a href="../../../../members/angelos_filos/index.html">Angelos Filos</a></em>, Rowan McAllister, Nicholas Rhinehart, Sergey Levine and <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+<br />
+When: 9:30 AM, 3:30 PM, Saturday December 14th
+<br />
+Where: <a href="https://ml4ad.github.io/">NeurIPS2019 Workshop on Machine Learning for Autonomous Driving</a>,
+East Meeting Room 1,2,3, Vancouver Convention Centre</p>
+
+<p><strong><a href="https://arxiv.org/abs/1912.09279">FDL: Mission Support Challenge</a></strong>
+<br />
+Luís F. Simões, Ben Day, Vinutha M. Shreenath, Callum Wilson, Chris Bridges, Sylvester Kaczmarek, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+<br />
+When: Friday December 13th, 2019. 08:00 AM - 06:00 PM
+<br />
+Where: <a href="http://ciml.chalearn.org/ciml2019">NeurIPS 2019 Workshop on Machine Learning Competitions for All</a>
+West 215 + 216</p>
+
+<p><strong>The Natural Neural Tangent Kernel: Neural Network Training Dynamics under Natural Gradient Descent</strong>
+<br />
+<a href="../../../../members/tim_rudner/index.html">Tim G. J. Rudner</a>, Florian Wenzel and <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>	
+<br />
+<strong><span style="color:red">Contributed talk</span></strong> (8.25 - 8.40)
+<br />
+When: 9.30 - 10.30, 14.30 - 15.30, 17.30 - 19.30 (posters), Friday, December 13, 2019
+<br />
+Where: <a href="http://bayesiandeeplearning.org/">BDL workshop</a>, West Exhibition Hall C
+Vancouver Convention Center</p>
+
+<p><strong>Wat heb je gezegd? Detecting Out-of-Distribution Translations with Variational Transformers</strong>
+<br />
+Tim Xiao, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a> and <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>	
+<br />
+<strong><span style="color:red">Spotlight talk</span></strong> (9.15 - 9.30)
+<br />
+When: 9.30 - 10.30, 14.30 - 15.30, 17.30 - 19.30 (posters), Friday, December 13, 2019
+<br />
+Where: <a href="http://bayesiandeeplearning.org/">BDL workshop</a>, West Exhibition Hall C
+Vancouver Convention Center</p>
+
+<p><strong>Improving MFVI in Bayesian Neural Networks with Empirical Bayes: a Study with Diabetic Retinopathy Diagnosis</strong>
+<br />
+Ranganath Krishnan, Mahesh Subedar, Omesh Tickoo, <a href="../../../../members/angelos_filos/index.html">Angelos Filos</a> and <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+<br />
+When: 9.30 - 10.30, 14.30 - 15.30, 17.30 - 19.30 (posters), Friday, December 13, 2019
+<br />
+Where: <a href="http://bayesiandeeplearning.org/">BDL workshop</a>, West Exhibition Hall C
+Vancouver Convention Center</p>
+
+<p><strong>Tighter Variational Bounds for Deep Gaussian Processes</strong>
+<br />
+Waseem Aslam, <a href="../../../../members/tim_rudner/index.html">Tim G. J. Rudner</a> and <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>	
+<br />
+When: 9.30 - 10.30, 14.30 - 15.30, 17.30 - 19.30 (posters), Friday, December 13, 2019
+<br />
+Where: <a href="http://bayesiandeeplearning.org/">BDL workshop</a>, West Exhibition Hall C
+Vancouver Convention Center</p>
+
+<p><strong>Probabilistic Super-Resolution of Solar Magnetograms: Generating Many Explanations and Measuring Uncertainties</strong>
+<br />
+Xavier Gitiaux, Shane Maloney, Anna Jungbluth, Carl Shneider, Atılım Güneş Baydin, Paul J. Wright, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, Michel Deudon, Alfredo Kalaitzis and Andres Munoz-Jaramillo	
+<br />
+When: 9.30 - 10.30, 14.30 - 15.30, 17.30 - 19.30 (posters), Friday, December 13, 2019
+<br />
+Where: <a href="http://bayesiandeeplearning.org/">BDL workshop</a>, West Exhibition Hall C
+Vancouver Convention Center</p>
+
+<p><strong>Try Depth Instead of Weight Correlations: Mean-field is a Less Restrictive Assumption for Variational Inference in Deep Networks</strong>
+<br />
+<a href="../../../../members/sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="../../../../members/lewis_smith/index.html">Lewis Smith</a> and <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+<br />
+<strong><span style="color:red">Contributed talk</span></strong> (14.15 - 14.30)
+<br />
+When: 9.30 - 10.30, 14.30 - 15.30, 17.30 - 19.30 (posters), Friday, December 13, 2019
+<br />
+Where: <a href="http://bayesiandeeplearning.org/">BDL workshop</a>, West Exhibition Hall C
+Vancouver Convention Center</p>
+
+<p><strong>A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks</strong>
+<br />
+<a href="../../../../members/angelos_filos/index.html">Angelos Filos</a>, <a href="../../../../members/sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../../../../members/tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../../../../members/zac_kenton/index.html">Zachary Kenton</a>, <a href="../../../../members/lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, Arnoud de Kroon and <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>	
+<br />
+<strong><span style="color:red">Spotlight talk</span></strong> (9.15 - 9.30)
+<br />
+When: 9.30 - 10.30, 14.30 - 15.30, 17.30 - 19.30 (posters), Friday, December 13, 2019
+<br />
+Where: <a href="http://bayesiandeeplearning.org/">BDL workshop</a>, West Exhibition Hall C
+Vancouver Convention Center</p>
+
+<p><strong>Single-Frame Super-Resolution of Solar Magnetograms: Investigating Physics-Based Metrics &amp; Losses</strong>
+<br />
+Anna Jungbluth, Xavier Gitiaux, Shane Maloney, Carl Shneider, Paul Wright, Atılım Güneş Baydin, Michel Deudon, Alfredo Kalaitzis, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a> and Andres Munoz-Jaramillo
+<br />
+When: 15:20 – 16:20, DECEMBER 14, 2019 
+<br />
+Where: <a href="https://ml4physicalsciences.github.io/">Machine Learning and the Physical Sciences (ML4PS)</a>
+WEST MEETING ROOMS 109 &amp; 110</p>
+
+<p><strong>Using U-Nets to create high-fidelity virtual observations of the solar corona</strong>
+<br />
+Valentina Salvatelli, Souvik Bose, Brad Neuberg, Luiz F. G. dos Santos, Mark Cheung, Miho Janvier, Atılım Güneş Baydin, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a> and Meng Jin
+<br />
+When: 15:20 – 16:20, DECEMBER 14, 2019 
+<br />
+Where: <a href="https://ml4physicalsciences.github.io/">Machine Learning and the Physical Sciences (ML4PS)</a>
+WEST MEETING ROOMS 109 &amp; 110</p>
+
+<p><strong>Auto-Calibration of Remote Sensing Solar Telescopes with Deep Learning</strong>
+<br />
+Brad Neuberg, Souvik Bose, Valentina Salvatelli, Luiz F. G. dos Santos, Mark Cheung, Miho Janvier, Atılım Güneş Baydin, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a> and Meng Jin
+<br />
+When: 15:20 – 16:20, DECEMBER 14, 2019 
+<br />
+Where: <a href="https://ml4physicalsciences.github.io/">Machine Learning and the Physical Sciences (ML4PS)</a>
+WEST MEETING ROOMS 109 &amp; 110</p>
+
+<p><strong>Prediction of GNSS Phase Scintillations: A MachineLearning Approach</strong>
+<br />
+Kara Lamb, Garima Malhotra, Athanasios Vlontzos, Edward Wagstaff, Atılım Güneş Baydin, Anahita Bhiwandiwalla, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, Alfredo Kalaitzis, Anthony Reina and Asti Bhatt
+<br />
+When: 15:20 – 16:20, DECEMBER 14, 2019 
+<br />
+Where: <a href="https://ml4physicalsciences.github.io/">Machine Learning and the Physical Sciences (ML4PS)</a>
+WEST MEETING ROOMS 109 &amp; 110</p>
+
+<p><strong>Correlation of Auroral Dynamics and GNSS Scintillation with an Autoencoder</strong>
+<br />
+Kara Lamb, Garima Malhotra, Athanasios Vlontzos, Edward Wagstaff, Atılım Güneş Baydin, Anahita Bhiwandiwalla, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, Alfredo Kalaitzis, Anthony Reina and Asti Bhatt
+<br />
+When: 15:20 – 16:20, DECEMBER 14, 2019 
+<br />
+Where: <a href="https://ml4physicalsciences.github.io/">Machine Learning and the Physical Sciences (ML4PS)</a>
+WEST MEETING ROOMS 109 &amp; 110</p>
+
+<p><strong>The StarCraft Multi-Agent Challenge</strong>
+<br />
+Mikayel Samvelyan (Russian-Armenian University); Tabish Rashid (University of Oxford); Christian Schroeder de Witt (University of Oxford); Gregory Farquhar (University of Oxford); Nantas Nardelli (University of Oxford); <a href="../../../../members/tim_rudner/index.html">Tim G. J. Rudner</a> (University of Oxford); Chia-Man Hung (University of Oxford); Philip Torr (University of Oxford); Jakob Foerster (University of Oxford); Shimon Whiteson (University of Oxford)
+<br />
+When: 15:00 - 16:00, 18:00 - 19:00, Sat Dec 14, 2019
+<br />
+Where: <a href="https://sites.google.com/view/deep-rl-workshop-neurips-2019/home">NeurIPS 2019 Workshop on Deep Reinforcement Learning</a>
+West Exhibition Hall C</p>
+
+<p><strong>PAC-Bayes Generalization Bounds for Invariant Neural Networks</strong>
+<br />
+<a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a> (University of Oxford); Marta Kwiatkowska (Oxford University); <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a> (University of Oxford)
+<br />
+When: 1:15pm to 2:45pm, 6:30pm to 8pm, Monday Dec 9 
+<br />
+Where: <a href="https://docs.google.com/document/d/1drH0_3Gv_4LYQzImJBn6_0XjFE8tfHl94BD6fKyVbis/edit">14th Women in Machine Learning Workshop (WiML 2019)</a>
+East Exhibition Hall B</p>
+
+</p>
+
+<hr style="margin: 1rem 0 1rem 0">
+<h2 style="text-align: center;">
+    More great blog posts here: <a
+        href="../../../../blog.html"><i>OATML Blog</i></a>
+</h2>
+
+<hr style="margin: 1rem 0 1rem 0">
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Contact -->
+		<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header>
+            <!-- <h2><a href="contact.html" id="my_headline">Contact</a></h2> -->
+            <h2>Contact</h2>
+            <div class="row 200%">
+                <div class="6u 12u$(medium) left">
+                    <b>We are located at </b> <br>
+                    <a href="https://goo.gl/maps/Y6xinHJ5T7o" target="_blank">Department of
+                      Computer Science, University of Oxford</a><br>
+                    Wolfson Building<br>
+                    Parks Road<br>
+                    OXFORD<br>
+                    OX1 3QD<br>
+                    UK
+                </div>
+                <div class="6u 12u$(medium)">
+                    <b>Twitter</b>: <a href="https://twitter.com/OATML_Oxford" target="_blank">@OATML_Oxford</a><br>
+                    <b>Github</b>: <a href="https://github.com/oatml" target="_blank">OATML</a><br>
+                    <b>Email</b>: <a href="mailto:oatml@cs.ox.ac.uk">oatml@cs.ox.ac.uk</a>
+                </div>
+            </div>
+            <footer class="align-center">
+                <p></p>
+                <br>
+                <h4>Are you looking to do a PhD in machine learning? Did you do a PhD in another field and want to do a postdoc in machine learning? Would you like to visit the group?</h4>
+                <!-- <a href="contact.html" class="button alt">How to get here</a> -->
+                <a href="https://oatml.cs.ox.ac.uk/apply.html" class="button alt">How to apply</a>
+            </footer>
+            <br>
+            <br>
+        </header>
+    </div>
+</section>
+
+
+		<!-- Footer -->
+					<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/OATML_Oxford" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/OATML" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="contact.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li> -->
+						<li><a href="mailto:oatml@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Yarin Gal. All rights reserved. Template was adapted from <a href="https://templated.co/" target="_blank">Templated</a> and some photos are used from <a href="http://commons.wikimedia.org" target="_blank">Wikimedia</a> under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CCA 3.0</a> licence.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+					<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/skel.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/util.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/main.js"></script>
+
+	</body>
+</html>

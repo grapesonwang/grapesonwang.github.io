@@ -1,0 +1,639 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+
+
+
+	<title>Sebastian Farquhar | OATML | Oxford Applied and Theoretical Machine Learning Group</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45108170-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-45108170-4');
+	</script>
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<meta name="description" content="Seb is a DPhil student supervised by Yarin Gal and part of the Centre for Doctoral Training in Cyber Security. He is interested in the pragmatic fundamentals of deep learning for their own sake as well as for their application to safe and secure machine learning systems." />
+	<meta name="keywords" content="Sebastian Farquhar,Sebastian Farquhar | OATML | Oxford Applied and Theoretical Machine Learning Group,OATML,Oxford,Machine learning,ML,Artificial intelligence,AI,Deep learning,DL,Bayesian deep learning,BDL,Bayesian,Bayesian modelling,Probabilistic modelling,Research group,Resarch,Fundamental Research,Pragmatic research,Yarin,Gal,Yarin Gal,yaringal" />
+	<meta charset="utf-8" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://oatml.cs.ox.ac.uk/assets/css/main.css" />
+
+    <link rel="apple-touch-icon-precomposed" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="https://oatml.cs.ox.ac.uk/images/favicon.ico">
+
+	<meta property="og:title" content="Sebastian Farquhar | OATML | Oxford Applied and Theoretical Machine Learning Group" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://oatml.cs.ox.ac.uk/./images/member_sf.jpg" />
+	<meta property="og:description" content="Seb is a DPhil student supervised by Yarin Gal and part of the Centre for Doctoral Training in Cyber Security. He is interested in the pragmatic fundamentals of deep learning for their own sake as well as for their application to safe and secure machine learning systems." />
+	<style type="text/css">
+		.my_headline {
+			color: inherit !important;
+			font-weight: inherit;
+			text-decoration: inherit;
+		}
+		/*.my_logo {display: block !important; margin: auto; padding: 20px 0px 20px 0px; width: 50%;}*/
+		.my_logo {
+			display: block !important;
+			margin: auto;
+			padding: 20px 0px 20px 0px;
+			max-height: 70%;
+		}
+		.banner > article .inner {height: 100%}
+		.banner > article .inner > header {height: 85%}
+		.banner_top {height: 15%}
+		body.is-mobile .banner_top {height: 5%}
+		@media screen and (max-width: 980px) {
+			.banner_top {height: 10%}
+			.my_logo {max-height: 50%}
+		}
+		.my_box_image {overflow: hidden; max-height: 50px;}
+		.my_news_div {padding: 0 !important}
+		.my_news_div div {margin: 0em 1em 1em 1em}
+		.my_news_div div header h4 {
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #484848 !important;
+			word-spacing: 3pt;
+		}
+		.my_news_div div header p {
+			font-size: 0.9em;
+			color: #aaa !important;
+			margin-top: -0.6em;
+			margin-bottom: 0.1em;
+		}
+		.my_news_span {
+			padding: 0 !important;
+			background-color: transparent !important;
+		}
+		.my_news_span img {
+			border-radius: 100%;
+			width: 100%;
+			border: solid 0.5em rgba(144, 144, 144, 0.25);
+		}
+		div #my_div_grid:nth-child(2n) {
+			background-color: rgba(0, 0, 0, 0.075);
+		}
+		div #my_div_grid {
+			padding: 1rem 0rem 1rem 0rem;
+			margin: 0;
+		}
+		.wrapper.style3.pageheader {
+			background-size: 100% !important;
+			background-position: top !important;
+			background-image: url('https://oatml.cs.ox.ac.uk/images/bg_crop.jpg') !important;
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			.wrapper.style3.pageheader {background-size: 200% !important;}
+			.ox-link {display: none;}
+			.group-title-link {display: none;}
+			.group-title-link-short {display: inline;}
+			div.my_news_div div.fit {
+				text-align : inherit !important;
+			}
+			span.my_news_span.image.right {
+				float : left;
+				margin: 0 1.5rem 1rem 0;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 435px) {
+			.my_header {
+				min-height: 120pt !important;
+			}
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) {
+			.group-title-link-short {display: none;}
+			.group-title-link {
+				display: inline;
+				vertical-align: bottom !important;
+				border-left: 2px solid white;
+				height: 500px;
+				padding: 0px 0px 0px 10px;
+				margin: 0px 0px 0px 10px;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_mobile.jpg') !important;
+				}
+			
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) and (max-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2.jpg') !important;
+				}
+			
+		}
+		/* Huge screens */
+		@media screen and (min-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_huge.jpg') !important;
+				}
+			
+		}
+		/* Mobile screens */
+		@media screen and (max-height: 600px) {
+			.indicators {display: none;}
+		}
+	</style>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+					<header id="header" class="alt">
+				<div class="logo">
+					<img src="https://oatml.cs.ox.ac.uk/images/cs_logo.png" class="ox-link" style="height: 58px; vertical-align: top !important" alt="University of Oxford Department of Computer Science" usemap="#compscimap" />
+					<map name="compscimap" id="compscimap">
+                                <area shape="rect" coords="0,0,55,55" href="http://www.ox.ac.uk/" alt="University of Oxford" title="University of Oxford"/>
+                                <area shape="rect" coords="65,0,170,55" href="http://www.cs.ox.ac.uk/" alt="Department of Computer Science - Home" title="Department of Computer Science - Home"/>
+                    </map>
+					<a href="../../index.html" class="group-title-link">
+						<!-- <img src="images/logo.png" style="height: 55px" alt="Group Home"> -->
+						Group Home
+					</a>
+					<a href="../../index.html" class="group-title-link-short">
+						Home
+					</a>
+				</div>
+				<a href="index.html#menu">Menu</a>
+			</header>
+
+
+		<!-- Nav -->
+					<nav id="menu">
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../../news.html">News</a></li>
+					<li><a href="../../publications.html">Publications</a></li>
+					<li><a href="../../code.html">Reproducibility and Code</a></li>
+					<li><a href="../../blog.html">Blog</a></li>
+					<li><a href="../../members.html">Group Members</a></li>
+					<!-- <li><a href="research.html">Research Themes</a></li> -->
+					<li><a href="https://oatml.cs.ox.ac.uk/apply.html">Apply to the Group</a></li>
+					<!-- <li><a href="contact.html">Contact</a></li> -->
+				</ul>
+			</nav>
+
+
+		<!-- One -->
+					<section id="One" class="wrapper style3 pageheader">
+				<div class="inner">
+					<header class="align-center">
+						<p>Oxford Applied and Theoretical Machine Learning Group</p>
+						<h1>OATML</h1>
+					</header>
+				</div>
+			</section>
+
+		<section id="two" class="wrapper style2">
+	<div class="inner">
+		<div class="box">
+			<div class="content">
+
+<header class="align-left">
+    <h4><a href="../../members.html">Back to all members...</a></h4>
+</header>
+
+<header class="align-center">
+	<p>Sebastian Farquhar</p>
+	<h3>PhD, started 2017</h3>
+	<ul class="icons">
+	
+		<li><a href="https://twitter.com/seb_far" target="_blank" class="icon fa-twitter"><span class="label"></span></a></li>
+	
+	
+		<li><a href="https://github.com/SebFar" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+	
+	
+		<li><a href="mailto:sebastian.farquhar@balliol.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+	
+	
+		<li><a href="http://sebastianfarquhar.com" class="icon fa-globe" target="_blank"><span class="label">Web</span></a></li>
+	
+	
+		<li><a href="https://scholar.google.co.uk/citations?user=bvShhTEAAAAJ&hl=en&oi=ao" class="ai ai-google-scholar-square ai-2x" style="text-decoration: none;" target="_blank"><span class="label"></span></a></li>
+	
+	</ul>
+</header>
+
+<div class="4u 12u$(small)" style="margin-left: auto; margin-right: auto;">
+    <span class="image main">
+        <img src="../../images/member_sf.jpg" alt="" />
+    </span>
+</div>
+
+
+<p>
+<p>Seb is a DPhil student supervised by Yarin Gal and part of the <a href="https://www.cybersecurity.ox.ac.uk/education/cdt">Centre for Doctoral Training in Cyber Security</a>. He is interested in the pragmatic fundamentals of deep learning for their own sake as well as for their application to safe and secure machine learning systems. Before joining the research group, he worked in <a href="http://www.globalprioritiesproject.org/">technology policy</a> (including biosafety and AI policy), <a href="http://www.80000hours.org">social-entrepreneurship</a>, and <a href="http://www.mckinsey.com">strategy consulting</a>. He has been working on startups in the effective altruism community since 2012. He has a Masters degree in Physics and Philosophy from the University of Oxford.</p>
+
+</p>
+
+
+
+
+
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Publications</p>
+</header>
+<div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Farquhar2020Try" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/2002.03704" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/try_depth.png" title="Try Depth Instead of Weight Correlations: Mean-field is a Less Restrictive Assumption for Deeper Networks" alt="Try Depth Instead of Weight Correlations: Mean-field is a Less Restrictive Assumption for Deeper Networks" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Try Depth Instead of Weight Correlations: Mean-field is a Less Restrictive Assumption for Deeper Networks</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Try Depth Instead of Weight Correlations: Mean-field is a Less Restrictive Assumption for Deeper Networks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>We challenge the longstanding assumption that the mean-field approximation for variational inference in Bayesian neural networks is severely restrictive. We argue mathematically that full-covariance approximations only improve the ELBO if they improve the expected log-likelihood. We further show that deeper mean-field networks are able to express predictive distributions approximately equivalent to shallower full-covariance networks. We validate these observations empirically, demonstrating that deeper models decrease the divergence between diagonal- and full-covariance Gaussian fits to the true posterior.</p>
+ -->
+		      We challenge the longstanding assumption that the mean-field approximation for variational inference in Bayesian neural networks is severely restrictive. We argue mathematically that full-covariance approximations only improve the ELBO if they improve the expected log-likelihood. We further show that deeper mean-field networks are able to express predictive distributions approximately equivalent to shallower full-covariance networks. We validate these observations empirically, demonstrating that deeper models decrease the divergence between diagonal- and full-covariance Gaussian fits to the true posterior. 
+</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Sebastian Farquhar</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <b><span style="color:red">Contributed talk</span>, <i>Workshop on Bayesian Deep Learning, NeurIPS 2019</i></b> <br> [<a href="http://bayesiandeeplearning.org/2019/papers/45.pdf" target="_blank">Workshop paper</a>], [<a href="https://arxiv.org/abs/2002.03704" target="_blank">arXiv</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Farquhar2020Radial" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1907.00865" target="_blank">
+		        <img src="../../images/neural_network.jpg" title="Radial Bayesian Neural Networks: Beyond Discrete Support In Large-Scale Bayesian Deep Learning" alt="Radial Bayesian Neural Networks: Beyond Discrete Support In Large-Scale Bayesian Deep Learning" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Radial Bayesian Neural Networks: Beyond Discrete Support In Large-Scale Bayesian Deep Learning</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Radial Bayesian Neural Networks: Beyond Discrete Support In Large-Scale Bayesian Deep Learning</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>We propose Radial Bayesian Neural Networks (BNNs): a variational approximate posterior for BNNs which scales well to large models while maintaining a distribution over weight-space with full support. Other scalable Bayesian deep learning methods, like MC dropout or deep ensembles, have discrete support—they assign zero probability to almost all of the weight-space. Unlike these discrete support methods, Radial BNNs’ full support makes them suitable for use as a prior for sequential inference. In addition, they solve the conceptual challenges with the a priori implausibility of weight distributions with discrete support. The Radial BNN is motivated by avoiding a sampling problem in ‘mean-field’ variational inference (MFVI) caused by the so-called ‘soap-bubble’ pathology of multivariate Gaussians. We show that, unlike MFVI, Radial BNNs are robust to hyperparameters and can be efficiently applied to a challenging real-world medical application without needing ad-hoc tweaks and intensive tuning. In fact, in this setting Radial BNNs out-perform discrete-support methods like MC dropout. Lastly, by using Radial BNNs as a theoretically principled, robust alternative to MFVI we make significant strides in a Bayesian continual learning evaluation.</p>
+ -->
+		      We propose Radial Bayesian Neural Networks (BNNs): a variational approximate posterior for BNNs which scales well to large models while maintaining a distribution over weight-space with full support. Other scalable Bayesian deep learning methods, like MC dropout or deep ensembles, have discrete support---they assign zero probability to almost all of the weight-space. Unlike these discrete support methods, Radial BNNs' full support makes them suitable for use as a prior for sequential inference. In addition, they solve the conceptual challenges with the a priori implausibility of weight distributions with discrete support. The Radial BNN is motivated by avoiding a sampling problem in 'mean-field' variational inference (MFVI) caused by the so-called 'soap-bubble' pathology of multivariate Gaussians. We show that, unlike MFVI, Radial BNNs are robust to hyperparameters and can be efficiently applied to a challenging real-world medical application without needing ad-hoc tweaks and inten... [<a href="https://oatml.cs.ox.ac.uk/publications/202001_Farquhar2020Radial.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Sebastian Farquhar</a>, Michael Osborne, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i><b>The 23rd International Conference on Artificial Intelligence and Statistics (AISTATS)</b></i> <br> [<a href="https://arxiv.org/abs/1907.00865" target="_blank">arXiv</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="OATML2019DiabeticRetinopathyDiagnosis" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1912.10481" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/diabetic_retinopathy_diagnosis.jpg" title="A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks" alt="A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Evaluation of Bayesian deep learning (BDL) methods is challenging. We often seek to evaluate the methods’ robustness and scalability, assessing whether new tools give ‘better’ uncertainty estimates than old ones. These evaluations are paramount for practitioners when choosing BDL tools on-top of which they build their applications. Current popular evaluations of BDL methods, such as the UCI experiments, are lacking: Methods that excel with these experiments often fail when used in application such as medical or automotive, suggesting a pertinent need for new benchmarks in the field. We propose a new BDL benchmark with a diverse set of tasks, inspired by a real-world medical imaging application on diabetic retinopathy diagnosis. Visual inputs (512x512 RGB images of retinas) are considered, where model uncertainty is used for medical pre-screening—i.e. to refer patients to an expert when model diagnosis is uncertain. Methods are then ranked according to metrics derived from expert-domain to reflect real-world use of model uncertainty in automated diagnosis. We develop multiple tasks that fall under this application, including out-of-distribution detection and robustness to distribution shift. We then perform a systematic comparison of well-tuned BDL techniques on the various tasks. From our comparison we conclude that some current techniques which solve benchmarks such as UCI `overfit’ their uncertainty to the dataset—when evaluated on our benchmark these underperform in comparison to simpler baselines. The code for the benchmark, its baselines, and a simple API for evaluating new BDL tools are made available at https://github.com/oatml/bdl-benchmarks.</p>
+ -->
+		      Evaluation of Bayesian deep learning (BDL) methods is challenging. We often seek to evaluate the methods' robustness and scalability, assessing whether new tools give 'better' uncertainty estimates than old ones. These evaluations are paramount for practitioners when choosing BDL tools on-top of which they build their applications. Current popular evaluations of BDL methods, such as the UCI experiments, are lacking: Methods that excel with these experiments often fail when used in application such as medical or automotive, suggesting a pertinent need for new benchmarks in the field. We propose a new BDL benchmark with a diverse set of tasks, inspired by a real-world medical imaging application on diabetic retinopathy diagnosis. Visual inputs (512x512 RGB images of retinas) are considered, where model uncertainty is used for medical pre-screening---i.e. to refer patients to an expert when model diagnosis is uncertain. Methods are then ranked according to metrics derived from expert-... [<a href="https://oatml.cs.ox.ac.uk/publications/201907_OATML2019DiabeticRetinopathyDiagnosis.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, Arnoud de Kroon, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i>Preprint, 2019</i> <br> [<a href="http://www.cs.ox.ac.uk/people/angelos.filos/publications/diabetic_retinopathy_diagnosis.pdf" target="_blank">Preprint</a>] [<a href="../../bibtex/OATML2019DiabeticRetinopathyDiagnosis.bib" target="_blank">BibTex</a>] [<a href="https://github.com/OATML/bdl-benchmarks" target="_blank">Code</a>] <br> <i>arXiv, 2019</i> <br> [<a href="http://arxiv.org/abs/1912.10481" target="_blank">arXiv</a>] <br> <b><span style="color:red">Spotlight talk</span>, <i>Workshop on Bayesian Deep Learning, NeurIPS 2019</i></b> <br> [<a href="http://bayesiandeeplearning.org/2019/papers/12.pdf" target="_blank">Paper</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="FarquharGal2018Unifying" style="text-align: center;">
+		    <span class="images">
+		      <a href="http://sebastianfarquhar.com/assets/pdf/Farquhar2018c.pdf" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/continual_learning_image.jpg" title="A Unifying Bayesian View of Continual Learning" alt="A Unifying Bayesian View of Continual Learning" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>A Unifying Bayesian View of Continual Learning</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>A Unifying Bayesian View of Continual Learning</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Some machine learning applications require continual learning—where data comes in a sequence of datasets, each is used for training and then permanently discarded. From a Bayesian perspective, continual learning seems straightforward: Given the model posterior one would simply use this as the prior for the next task. However, exact posterior evaluation is intractable with many models, especially with Bayesian neural networks (BNNs). Instead, posterior approximations are often sought. Unfortunately, when posterior approximations are used, prior-focused approaches do not succeed in evaluations designed to capture properties of realistic continual learning use cases. As an alternative to prior-focused methods, we introduce a new approximate Bayesian derivation of the continual learning loss. Our loss does not rely on the posterior from earlier tasks, and instead adapts the model itself by changing the likelihood term. We call these approaches likelihood-focused. We then combine prior- and likelihood-focused methods into one objective, tying the two views together under a single unifying framework of approximate Bayesian continual learning.</p>
+ -->
+		      Some machine learning applications require continual learning—where data comes in a sequence of datasets, each is used for training and then permanently discarded. From a Bayesian perspective, continual learning seems straightforward: Given the model posterior one would simply use this as the prior for the next task. However, exact posterior evaluation is intractable with many models, especially with Bayesian neural networks (BNNs). Instead, posterior approximations are often sought. Unfortunately, when posterior approximations are used, prior-focused approaches do not succeed in evaluations designed to capture properties of realistic continual learning use cases. As an alternative to prior-focused methods, we introduce a new approximate Bayesian derivation of the continual learning loss. Our loss does not rely on the posterior from earlier tasks, and instead adapts the model itself by changing the likelihood term. We call these approaches likelihood-focused. We then combine prior-... [<a href="https://oatml.cs.ox.ac.uk/publications/201812_FarquharGal2018Unifying.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i><b>NeurIPS 2018 workshop on Bayesian Deep Learning</b></i> <br> [<a href="https://sebastianfarquhar.com/assets/pdf/Farquhar2018c.pdf" target="_blank">Paper</a>] [BibTex]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="FarquharGal2018Differentially" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://pimlai.github.io/pimlai18/#papers" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/medical.jpg" title="Differentially private continual learning" alt="Differentially private continual learning" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Differentially private continual learning</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Differentially private continual learning</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Catastrophic forgetting can be a significant problem for institutions that must delete historic data for privacy reasons. For example, hospitals might not be able to retain patient data permanently. But neural networks trained on recent data alone will tend to forget lessons learned on old data. We present a differentially private continual learning framework based on variational inference. We estimate the likelihood of past data given the current model using differentially private generative models of old datasets. The differentially private training has no detrimental impact on our architecture’s continual learning performance, and still outperforms the current state-of-the-art non-private continual learning.</p>
+ -->
+		      Catastrophic forgetting can be a significant problem for institutions that must delete historic data for privacy reasons. For example, hospitals might not be able to retain patient data permanently. But neural networks trained on recent data alone will tend to forget lessons learned on old data. We present a differentially private continual learning framework based on variational inference. We estimate the likelihood of past data given the current model using differentially private generative models of old datasets. The differentially private training has no detrimental impact on our architecture's continual learning performance, and still outperforms the current state-of-the-art non-private continual learning.
+</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i><b>Privacy in Machine Learning and Artificial Intelligence workshop, ICML, 2018</b></i> <br> [<a href="http://sebastianfarquhar.com/assets/pdf/Farquhar2018b.pdf" target="_blank">Paper</a>] [<a href="../../bibtex/FarquharGal2018Differentially.bib" target="_blank">BibTex</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="FarquharGal2018Towards" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1805.09733" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/medical.jpg" title="Towards Robust Evaluations of Continual Learning" alt="Towards Robust Evaluations of Continual Learning" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Towards Robust Evaluations of Continual Learning</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Towards Robust Evaluations of Continual Learning</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Continual learning experiments used in current deep learning papers do not faithfully assess fundamental challenges of learning continually, masking weak-points of the suggested approaches instead. We study gaps in such existing evaluations, proposing essential experimental evaluations that are more representative of continual learning’s challenges, and suggest a re-prioritization of research efforts in the field. We show that current approaches fail with our new evaluations and, to analyse these failures, we propose a variational loss which unifies many existing solutions to continual learning under a Bayesian framing, as either ‘prior-focused’ or ‘likelihood-focused’. We show that while prior-focused approaches such as EWC and VCL perform well on existing evaluations, they perform dramatically worse when compared to likelihood-focused approaches on other simple tasks.</p>
+ -->
+		      Continual learning experiments used in current deep learning papers do not faithfully assess fundamental challenges of learning continually, masking weak-points of the suggested approaches instead. We study gaps in such existing evaluations, proposing essential experimental evaluations that are more representative of continual learning's challenges, and suggest a re-prioritization of research efforts in the field. We show that current approaches fail with our new evaluations and, to analyse these failures, we propose a variational loss which unifies many existing solutions to continual learning under a Bayesian framing, as either 'prior-focused' or 'likelihood-focused'. We show that while prior-focused approaches such as EWC and VCL perform well on existing evaluations, they perform dramatically worse when compared to likelihood-focused approaches on other simple tasks.
+</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i><b>Lifelong Learning: A Reinforcement Learning Approach workshop, ICML, 2018</b></i> <br> [<a href="https://arxiv.org/abs/1805.09733" target="_blank">arXiv</a>] [<a href="../../bibtex/FarquharGal2018Towards.bib" target="_blank">BibTex</a>]
+		  </div>
+		</div><br>
+<br>
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Reproducibility and Code</p>
+</header><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="bdlb" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/OATML/bdl-benchmarks" target="_blank">
+		        <img src="../../images/BDLB3.PNG" title="Code for Bayesian Deep Learning Benchmarks" alt="Code for Bayesian Deep Learning Benchmarks" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Code for Bayesian Deep Learning Benchmarks</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for Bayesian Deep Learning Benchmarks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <p>In order to make real-world difference with <strong>Bayesian Deep Learning</strong> (BDL) tools, the tools must scale to real-world settings. And for that we, the research community, must be able to evaluate our inference tools (and iterate quickly) with real-world benchmark tasks. We should be able to do this without necessarily worrying about application-specific domain knowledge, like the expertise often required in medical applications for example. We require benchmarks to test for inference robustness, performance, and accuracy, in addition to cost and effort of development. These benchmarks should be at a variety of scales, ranging from toy MNIST-scale benchmarks for fast development cycles, to large data benchmarks which are truthful to real-world applications, capturing their constraints.</p>
+
+		    </p>
+		    <a href="https://github.com/OATML/bdl-benchmarks" target="_blank">Code</a><hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		  </div>
+		</div><!-- reset colours.. -->
+<div class="row" id="my_div_grid" style="visibility: hidden;">
+</div><br>
+<br>
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Blog Posts</p>
+</header><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="ICML_2020" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://oatml.cs.ox.ac.uk/blog/2020/07/10/ICML_2020.html">
+		        <img src="https://oatml.cs.ox.ac.uk//images/icml.jpg" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>13 OATML Conference and Workshop papers at ICML 2020</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>We are glad to share the following 13 papers by OATML authors and collaborators to be presented at this ICML conference and workshops …</p>
+
+	    	        <a href="https://oatml.cs.ox.ac.uk/blog/2020/07/10/ICML_2020.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="index.html">Sebastian Farquhar</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/lisa_schut/">Lisa Schut</a>, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>, <a href="https://oatml.cs.ox.ac.uk/members/pascal_notin/">Pascal Notin</a>, <a href="../andreas_kirsch/index.html">Andreas Kirsch</a>, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/jishnu_mukhoti/">Jishnu Mukhoti</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>10 Jul 2020</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Beyond-Discrete-Support-in-Large-Scale-Bayesian-Deep-Learning" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://oatml.cs.ox.ac.uk/blog/2020/04/22/Beyond-Discrete-Support-in-Large-Scale-Bayesian-Deep-Learning.html">
+		        <img src="https://oatml.cs.ox.ac.uk//images/radial/what_you_get_vs_what_you_expect.png" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Beyond Discrete Support in Large-scale Bayesian Deep Learning</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>Most of the scalable methods for Bayesian deep learning give approximate posteriors with ‘discrete support’, which is unsuitable for Bayesian updating. Mean-field variational inference could work, but we show that it fails in high dimensions because of the ‘soap-bubble’ pathology of multivariate Gaussians. We introduce a novel approximating posterior, Radial BNNs, that give you the distribution you intuitively imagine when you think about multi-variate Gaussians in high dimensions. Repo at https://github.com/SebFar/radial_bnn …</p>
+
+	    	        <a href="https://oatml.cs.ox.ac.uk/blog/2020/04/22/Beyond-Discrete-Support-in-Large-Scale-Bayesian-Deep-Learning.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Sebastian Farquhar</a>, Michael Osborne, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>22 Apr 2020</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="NeurIPS_2019" style="text-align: center;">
+		    <span class="images">
+		      <a href="../../blog/2019/12/08/NeurIPS_2019.html">
+		        <img src="https://oatml.cs.ox.ac.uk//images/vancouver_image.jpg" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>25 OATML Conference and Workshop papers at NeurIPS 2019</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>We are glad to share the following 25 papers by OATML authors and collaborators to be presented at this NeurIPS conference and workshops. …</p>
+
+	    	        <a href="../../blog/2019/12/08/NeurIPS_2019.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>, <a href="../andreas_kirsch/index.html">Andreas Kirsch</a>, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>08 Dec 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="bdlb" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/OATML/bdl-benchmarks">
+		        <img src="https://oatml.cs.ox.ac.uk//images/BDLB3.PNG" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Bayesian Deep Learning Benchmarks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>In order to make real-world difference with <strong>Bayesian Deep Learning</strong> (BDL) tools, the tools must scale to real-world settings. And for that we, the research community, must be able to evaluate our inference tools (and iterate quickly) with real-world benchmark tasks. We should be able to do this without necessarily worrying about application-specific domain knowledge, like the expertise often required in medical applications for example. We require benchmarks to test for inference robustness, performance, and accuracy, in addition to cost and effort of development. These benchmarks should be at a variety of scales, ranging from toy MNIST-scale benchmarks for fast development cycles, to large data benchmarks which are truthful to real-world applications, capturing their constraints. …</p>
+
+	    	        <a href="https://github.com/OATML/bdl-benchmarks">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>14 Jun 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div></div>
+		</div>
+	</div>
+</section>
+
+
+		<!-- Contact -->
+		<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header>
+            <!-- <h2><a href="contact.html" id="my_headline">Contact</a></h2> -->
+            <h2>Contact</h2>
+            <div class="row 200%">
+                <div class="6u 12u$(medium) left">
+                    <b>We are located at </b> <br>
+                    <a href="https://goo.gl/maps/Y6xinHJ5T7o" target="_blank">Department of
+                      Computer Science, University of Oxford</a><br>
+                    Wolfson Building<br>
+                    Parks Road<br>
+                    OXFORD<br>
+                    OX1 3QD<br>
+                    UK
+                </div>
+                <div class="6u 12u$(medium)">
+                    <b>Twitter</b>: <a href="https://twitter.com/OATML_Oxford" target="_blank">@OATML_Oxford</a><br>
+                    <b>Github</b>: <a href="https://github.com/oatml" target="_blank">OATML</a><br>
+                    <b>Email</b>: <a href="mailto:oatml@cs.ox.ac.uk">oatml@cs.ox.ac.uk</a>
+                </div>
+            </div>
+            <footer class="align-center">
+                <p></p>
+                <br>
+                <h4>Are you looking to do a PhD in machine learning? Did you do a PhD in another field and want to do a postdoc in machine learning? Would you like to visit the group?</h4>
+                <!-- <a href="contact.html" class="button alt">How to get here</a> -->
+                <a href="https://oatml.cs.ox.ac.uk/apply.html" class="button alt">How to apply</a>
+            </footer>
+            <br>
+            <br>
+        </header>
+    </div>
+</section>
+
+
+		<!-- Footer -->
+					<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/OATML_Oxford" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/OATML" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="contact.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li> -->
+						<li><a href="mailto:oatml@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Yarin Gal. All rights reserved. Template was adapted from <a href="https://templated.co/" target="_blank">Templated</a> and some photos are used from <a href="http://commons.wikimedia.org" target="_blank">Wikimedia</a> under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CCA 3.0</a> licence.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+					<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/skel.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/util.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/main.js"></script>
+
+	</body>
+</html>

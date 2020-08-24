@@ -1,0 +1,690 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+
+
+
+	<title>Tim G. J. Rudner | OATML | Oxford Applied and Theoretical Machine Learning Group</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45108170-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-45108170-4');
+	</script>
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<meta name="description" content="Tim is a DPhil student in the Department of Computer Science at the University of Oxford, working with Yarin Gal and Yee Whye Teh." />
+	<meta name="keywords" content="Tim G. J. Rudner,Tim G. J. Rudner | OATML | Oxford Applied and Theoretical Machine Learning Group,OATML,Oxford,Machine learning,ML,Artificial intelligence,AI,Deep learning,DL,Bayesian deep learning,BDL,Bayesian,Bayesian modelling,Probabilistic modelling,Research group,Resarch,Fundamental Research,Pragmatic research,Yarin,Gal,Yarin Gal,yaringal" />
+	<meta charset="utf-8" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://oatml.cs.ox.ac.uk/assets/css/main.css" />
+
+    <link rel="apple-touch-icon-precomposed" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="https://oatml.cs.ox.ac.uk/images/favicon.ico">
+
+	<meta property="og:title" content="Tim G. J. Rudner | OATML | Oxford Applied and Theoretical Machine Learning Group" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://oatml.cs.ox.ac.uk/./images/member_tr.jpg" />
+	<meta property="og:description" content="Tim is a DPhil student in the Department of Computer Science at the University of Oxford, working with Yarin Gal and Yee Whye Teh." />
+	<style type="text/css">
+		.my_headline {
+			color: inherit !important;
+			font-weight: inherit;
+			text-decoration: inherit;
+		}
+		/*.my_logo {display: block !important; margin: auto; padding: 20px 0px 20px 0px; width: 50%;}*/
+		.my_logo {
+			display: block !important;
+			margin: auto;
+			padding: 20px 0px 20px 0px;
+			max-height: 70%;
+		}
+		.banner > article .inner {height: 100%}
+		.banner > article .inner > header {height: 85%}
+		.banner_top {height: 15%}
+		body.is-mobile .banner_top {height: 5%}
+		@media screen and (max-width: 980px) {
+			.banner_top {height: 10%}
+			.my_logo {max-height: 50%}
+		}
+		.my_box_image {overflow: hidden; max-height: 50px;}
+		.my_news_div {padding: 0 !important}
+		.my_news_div div {margin: 0em 1em 1em 1em}
+		.my_news_div div header h4 {
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #484848 !important;
+			word-spacing: 3pt;
+		}
+		.my_news_div div header p {
+			font-size: 0.9em;
+			color: #aaa !important;
+			margin-top: -0.6em;
+			margin-bottom: 0.1em;
+		}
+		.my_news_span {
+			padding: 0 !important;
+			background-color: transparent !important;
+		}
+		.my_news_span img {
+			border-radius: 100%;
+			width: 100%;
+			border: solid 0.5em rgba(144, 144, 144, 0.25);
+		}
+		div #my_div_grid:nth-child(2n) {
+			background-color: rgba(0, 0, 0, 0.075);
+		}
+		div #my_div_grid {
+			padding: 1rem 0rem 1rem 0rem;
+			margin: 0;
+		}
+		.wrapper.style3.pageheader {
+			background-size: 100% !important;
+			background-position: top !important;
+			background-image: url('https://oatml.cs.ox.ac.uk/images/bg_crop.jpg') !important;
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			.wrapper.style3.pageheader {background-size: 200% !important;}
+			.ox-link {display: none;}
+			.group-title-link {display: none;}
+			.group-title-link-short {display: inline;}
+			div.my_news_div div.fit {
+				text-align : inherit !important;
+			}
+			span.my_news_span.image.right {
+				float : left;
+				margin: 0 1.5rem 1rem 0;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 435px) {
+			.my_header {
+				min-height: 120pt !important;
+			}
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) {
+			.group-title-link-short {display: none;}
+			.group-title-link {
+				display: inline;
+				vertical-align: bottom !important;
+				border-left: 2px solid white;
+				height: 500px;
+				padding: 0px 0px 0px 10px;
+				margin: 0px 0px 0px 10px;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_mobile.jpg') !important;
+				}
+			
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) and (max-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2.jpg') !important;
+				}
+			
+		}
+		/* Huge screens */
+		@media screen and (min-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_huge.jpg') !important;
+				}
+			
+		}
+		/* Mobile screens */
+		@media screen and (max-height: 600px) {
+			.indicators {display: none;}
+		}
+	</style>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+					<header id="header" class="alt">
+				<div class="logo">
+					<img src="https://oatml.cs.ox.ac.uk/images/cs_logo.png" class="ox-link" style="height: 58px; vertical-align: top !important" alt="University of Oxford Department of Computer Science" usemap="#compscimap" />
+					<map name="compscimap" id="compscimap">
+                                <area shape="rect" coords="0,0,55,55" href="http://www.ox.ac.uk/" alt="University of Oxford" title="University of Oxford"/>
+                                <area shape="rect" coords="65,0,170,55" href="http://www.cs.ox.ac.uk/" alt="Department of Computer Science - Home" title="Department of Computer Science - Home"/>
+                    </map>
+					<a href="../../index.html" class="group-title-link">
+						<!-- <img src="images/logo.png" style="height: 55px" alt="Group Home"> -->
+						Group Home
+					</a>
+					<a href="../../index.html" class="group-title-link-short">
+						Home
+					</a>
+				</div>
+				<a href="index.html#menu">Menu</a>
+			</header>
+
+
+		<!-- Nav -->
+					<nav id="menu">
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../../news.html">News</a></li>
+					<li><a href="../../publications.html">Publications</a></li>
+					<li><a href="../../code.html">Reproducibility and Code</a></li>
+					<li><a href="../../blog.html">Blog</a></li>
+					<li><a href="../../members.html">Group Members</a></li>
+					<!-- <li><a href="research.html">Research Themes</a></li> -->
+					<li><a href="https://oatml.cs.ox.ac.uk/apply.html">Apply to the Group</a></li>
+					<!-- <li><a href="contact.html">Contact</a></li> -->
+				</ul>
+			</nav>
+
+
+		<!-- One -->
+					<section id="One" class="wrapper style3 pageheader">
+				<div class="inner">
+					<header class="align-center">
+						<p>Oxford Applied and Theoretical Machine Learning Group</p>
+						<h1>OATML</h1>
+					</header>
+				</div>
+			</section>
+
+		<section id="two" class="wrapper style2">
+	<div class="inner">
+		<div class="box">
+			<div class="content">
+
+<header class="align-left">
+    <h4><a href="../../members.html">Back to all members...</a></h4>
+</header>
+
+<header class="align-center">
+	<p>Tim G. J. Rudner</p>
+	<h3>PhD, started 2017</h3>
+	<ul class="icons">
+	
+		<li><a href="https://twitter.com/timrudner" target="_blank" class="icon fa-twitter"><span class="label"></span></a></li>
+	
+	
+		<li><a href="https://github.com/timrudner" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+	
+	
+		<li><a href="mailto:tim.rudner@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+	
+	
+		<li><a href="http://timrudner.com" class="icon fa-globe" target="_blank"><span class="label">Web</span></a></li>
+	
+	
+		<li><a href="https://scholar.google.co.uk/citations?user=MbBntPgAAAAJ&hl=en&oi=ao" class="ai ai-google-scholar-square ai-2x" style="text-decoration: none;" target="_blank"><span class="label"></span></a></li>
+	
+	</ul>
+</header>
+
+<div class="4u 12u$(small)" style="margin-left: auto; margin-right: auto;">
+    <span class="image main">
+        <img src="../../images/member_tr.jpg" alt="" />
+    </span>
+</div>
+
+
+<p>
+<p>Tim is a DPhil student in the Department of Computer Science at the University of Oxford, working with <a href="http://www.cs.ox.ac.uk/people/yarin.gal/website">Yarin Gal</a> and <a href="http://csml.stats.ox.ac.uk/people/teh">Yee Whye Teh</a>. His research interests span Bayesian deep learning, variational inference, and reinforcement learning. Tim obtained a master’s degree in statistics from the <a href="http://www.stats.ox.ac.uk">University of Oxford</a> and an undergraduate degree in mathematics and economics from <a href="https://www.yale.edu">Yale University</a>, where he received the Charles E. Clark Memorial Award for Academic Excellence. He is an AI Fellow at Georgetown University’s <a href="https://cset.georgetown.edu">Center for Security and Emerging Technology</a>, a Fellow of the <a href="https://www.studienstiftung.de/en/leitbild">German Academic Scholarship Foundation</a>, and a <a href="https://www.rhodeshouse.ox.ac.uk">Rhodes Scholar</a>.</p>
+
+</p>
+
+
+
+
+
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Publications</p>
+</header>
+<div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Rudner2020Inter" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1912.04242" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/uncertainty_small.jpg" title="Inter-domain Deep Gaussian Processes with RKHS Fourier Features" alt="Inter-domain Deep Gaussian Processes with RKHS Fourier Features" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Inter-domain Deep Gaussian Processes with RKHS Fourier Features</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Inter-domain Deep Gaussian Processes with RKHS Fourier Features</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Inter-domain Gaussian processes (GPs) allow for high flexibility and low computational cost when performing approximate inference in GP models. They are particularly suitable for modeling data exhibiting global function behavior but are limited to stationary covariance functions and thus fail to model non-stationary data effectively. We propose Inter-domain Deep Gaussian Processes with RKHS Fourier Features, an extension of shallow inter-domain GPs that combines the advantages of inter-domain and deep Gaussian processes (DGPs) and demonstrate how to leverage existing approximate inference approaches to perform simple and scalable approximate inference on Inter-domain Deep Gaussian Processes. We assess the performance of our method on a wide range of prediction problems and demonstrate that it outperforms inter-domain GPs and DGPs on challenging large-scale and high-dimensional real-world datasets exhibiting both global behavior as well as a high-degree of non-stationarity.</p>
+ -->
+		      Inter-domain Gaussian processes (GPs) allow for high flexibility and low computational cost when performing approximate inference in GP models. They are particularly suitable for modeling data exhibiting global function behavior but are limited to stationary covariance functions and thus fail to model non-stationary data effectively. We propose Inter-domain Deep Gaussian Processes with RKHS Fourier Features, an extension of shallow inter-domain GPs that combines the advantages of inter-domain and deep Gaussian processes (DGPs) and demonstrate how to leverage existing approximate inference approaches to perform simple and scalable approximate inference on Inter-domain Deep Gaussian Processes. We assess the performance of our method on a wide range of prediction problems and demonstrate that it outperforms inter-domain GPs and DGPs on challenging large-scale and high-dimensional real-world datasets exhibiting both global behavior as well as a high-degree of non-stationarity.</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Tim G. J. Rudner</a>, Dino Sejdinovic, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <b><i>ICML, 2020</i></b> <br> [<a href="https://icml.cc/Conferences/2020/AcceptedPapersInitial" target="_blank">Paper</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Rudner2019Natural" style="text-align: center;">
+		    <span class="images">
+		      <a href="http://timrudner.com/assets/papers/Natural_Neural_Tangent_Kernel.pdf" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/uncertainty_small.jpg" title="The Natural Neural Tangent Kernel: Neural Network Training Dynamics under Natural Gradient Descent" alt="The Natural Neural Tangent Kernel: Neural Network Training Dynamics under Natural Gradient Descent" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>The Natural Neural Tangent Kernel: Neural Network Training Dynamics under Natural Gradient Descent</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>The Natural Neural Tangent Kernel: Neural Network Training Dynamics under Natural Gradient Descent</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Gradient-based optimization methods have proven successful in learning complex,
+overparameterized neural networks from non-convex objectives. Yet, the precise
+theoretical relationship between gradient-based optimization methods, the induced
+training dynamics, and generalization in deep neural networks remains unclear.
+In this work, we investigate the training dynamics of overparameterized neural
+networks under natural gradient descent. Taking a function-space view of the
+training dynamics, we give an exact analytic solution to the training dynamics on
+training points. We derive a bound on the discrepancy between the distributions over
+functions at the global optimum of natural gradient descent and the analytic solution
+to the natural gradient descent training dynamics linearized around the parameters
+at initialization and validate our theoretical results empirically. In particular, we
+show that the discrepancy between the functions obtained from linearized and
+non-linearized natural gradient descent is provably smaller than under standard
+gradient descent, and we demonstrate empirically that the discrepancy is small
+for overparameterized neural networks without needing to make a limit argument
+about the width of the neural network layers, as was done in previous work.
+Finally, we show that our theoretical results are consistent with the empirical
+discrepancy between the functions obtained from linearized and non-linearized
+natural gradient descent and that the discrepancy is small on a set of regression
+benchmark problems.</p>
+ -->
+		      Gradient-based optimization methods have proven successful in learning complex,
+overparameterized neural networks from non-convex objectives. Yet, the precise
+theoretical relationship between gradient-based optimization methods, the induced
+training dynamics, and generalization in deep neural networks remains unclear.
+In this work, we investigate the training dynamics of overparameterized neural
+networks under natural gradient descent. Taking a function-space view of the
+training dynamics, we give an exact analytic solution to the training dynamics on
+training points. We derive a bound on the discrepancy between the distributions over
+functions at the global optimum of natural gradient descent and the analytic solution
+to the natural gradient descent training dynamics linearized around the parameters
+at initialization and validate our theoretical results empirically. In particular, we
+show that the discrepancy between the functions obtained from linearized and
+non-linea... [<a href="https://oatml.cs.ox.ac.uk/publications/201912_Rudner2019Natural.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Tim G. J. Rudner</a>, Florian Wenzel, Yee Whye Teh, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <b><span style="color:red">Contributed talk</span>, <i>Workshop on Bayesian Deep Learning, NeurIPS 2019</i></b> <br> [<a href="http://timrudner.com/assets/papers/Natural_Neural_Tangent_Kernel.pdf" target="_blank">Paper</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="OATML2019DiabeticRetinopathyDiagnosis" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1912.10481" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/diabetic_retinopathy_diagnosis.jpg" title="A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks" alt="A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Evaluation of Bayesian deep learning (BDL) methods is challenging. We often seek to evaluate the methods’ robustness and scalability, assessing whether new tools give ‘better’ uncertainty estimates than old ones. These evaluations are paramount for practitioners when choosing BDL tools on-top of which they build their applications. Current popular evaluations of BDL methods, such as the UCI experiments, are lacking: Methods that excel with these experiments often fail when used in application such as medical or automotive, suggesting a pertinent need for new benchmarks in the field. We propose a new BDL benchmark with a diverse set of tasks, inspired by a real-world medical imaging application on diabetic retinopathy diagnosis. Visual inputs (512x512 RGB images of retinas) are considered, where model uncertainty is used for medical pre-screening—i.e. to refer patients to an expert when model diagnosis is uncertain. Methods are then ranked according to metrics derived from expert-domain to reflect real-world use of model uncertainty in automated diagnosis. We develop multiple tasks that fall under this application, including out-of-distribution detection and robustness to distribution shift. We then perform a systematic comparison of well-tuned BDL techniques on the various tasks. From our comparison we conclude that some current techniques which solve benchmarks such as UCI `overfit’ their uncertainty to the dataset—when evaluated on our benchmark these underperform in comparison to simpler baselines. The code for the benchmark, its baselines, and a simple API for evaluating new BDL tools are made available at https://github.com/oatml/bdl-benchmarks.</p>
+ -->
+		      Evaluation of Bayesian deep learning (BDL) methods is challenging. We often seek to evaluate the methods' robustness and scalability, assessing whether new tools give 'better' uncertainty estimates than old ones. These evaluations are paramount for practitioners when choosing BDL tools on-top of which they build their applications. Current popular evaluations of BDL methods, such as the UCI experiments, are lacking: Methods that excel with these experiments often fail when used in application such as medical or automotive, suggesting a pertinent need for new benchmarks in the field. We propose a new BDL benchmark with a diverse set of tasks, inspired by a real-world medical imaging application on diabetic retinopathy diagnosis. Visual inputs (512x512 RGB images of retinas) are considered, where model uncertainty is used for medical pre-screening---i.e. to refer patients to an expert when model diagnosis is uncertain. Methods are then ranked according to metrics derived from expert-... [<a href="https://oatml.cs.ox.ac.uk/publications/201907_OATML2019DiabeticRetinopathyDiagnosis.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, Arnoud de Kroon, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i>Preprint, 2019</i> <br> [<a href="http://www.cs.ox.ac.uk/people/angelos.filos/publications/diabetic_retinopathy_diagnosis.pdf" target="_blank">Preprint</a>] [<a href="../../bibtex/OATML2019DiabeticRetinopathyDiagnosis.bib" target="_blank">BibTex</a>] [<a href="https://github.com/OATML/bdl-benchmarks" target="_blank">Code</a>] <br> <i>arXiv, 2019</i> <br> [<a href="http://arxiv.org/abs/1912.10481" target="_blank">arXiv</a>] <br> <b><span style="color:red">Spotlight talk</span>, <i>Workshop on Bayesian Deep Learning, NeurIPS 2019</i></b> <br> [<a href="http://bayesiandeeplearning.org/2019/papers/12.pdf" target="_blank">Paper</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Fellows2019VIREL" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1811.01132" target="_blank">
+		        <img src="../../images/virel.jpg" title="VIREL: A Variational Inference Framework for Reinforcement Learning" alt="VIREL: A Variational Inference Framework for Reinforcement Learning" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>VIREL: A Variational Inference Framework for Reinforcement Learning</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>VIREL: A Variational Inference Framework for Reinforcement Learning</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Applying probabilistic models to reinforcement learning (RL) enables the application of powerful optimisation tools such as variational inference to RL. However, existing inference frameworks and their algorithms pose significant challenges for learning optimal policies, e.g., the absence of mode capturing behaviour in pseudo-likelihood methods and difficulties learning deterministic policies in maximum entropy RL based approaches. We propose VIREL, a novel, theoretically grounded probabilistic inference framework for RL that utilises a parametrised action-value function to summarise future dynamics of the underlying MDP. This gives VIREL a mode-seeking form of KL divergence, the ability to learn deterministic optimal polices naturally from inference and the ability to optimise value functions and policies in separate, iterative steps. In applying variational expectation-maximisation to VIREL we thus show that the actor-critic algorithm can be reduced to expectation-maximisation, with policy improvement equivalent to an E-step and policy evaluation to an M-step. We then derive a family of actor-critic methods from VIREL, including a scheme for adaptive exploration. Finally, we demonstrate that actor-critic algorithms from this family outperform state-of-the-art methods based on soft value functions in several domains.</p>
+ -->
+		      Applying probabilistic models to reinforcement learning (RL) enables the application of powerful optimisation tools such as variational inference to RL. However, existing inference frameworks and their algorithms pose significant challenges for learning optimal policies, e.g., the absence of mode capturing behaviour in pseudo-likelihood methods and difficulties learning deterministic policies in maximum entropy RL based approaches. We propose VIREL, a novel, theoretically grounded probabilistic inference framework for RL that utilises a parametrised action-value function to summarise future dynamics of the underlying MDP. This gives VIREL a mode-seeking form of KL divergence, the ability to learn deterministic optimal polices naturally from inference and the ability to optimise value functions and policies in separate, iterative steps. In applying variational expectation-maximisation to VIREL we thus show that the actor-critic algorithm can be reduced to expectation-maximisation, w... [<a href="https://oatml.cs.ox.ac.uk/publications/201912_Fellows2019Virel.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" />Matthew Fellows, Anuj Mahajan, <a href="index.html">Tim G. J. Rudner</a>, Shimon Whiteson
+		    <br>
+		    <i><b>NeurIPS, 2019</b></i> <br> <i>NeurIPS 2018 Workshop on Probabilistic Reinforcement Learning and Structured Control</i> <br> [<a href="https://arxiv.org/abs/1811.01132" target="_blank">arXiv</a>] [<a href="../../bibtex/Fellows2019Virel.bib" target="_blank">BibTex</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Samvelyan2019SMAC" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1902.04043" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/smac.jpg" title="The StarCraft Multi-Agent Challenge" alt="The StarCraft Multi-Agent Challenge" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>The StarCraft Multi-Agent Challenge</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>The StarCraft Multi-Agent Challenge</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>In the last few years, deep multi-agent reinforcement learning (RL) has become a highly active area of research. A particularly challenging class of problems in this area is partially observable, cooperative, multi-agent learning, in which teams of agents must learn to coordinate their behaviour while conditioning only on their private observations. This is an attractive research area since such problems are relevant to a large number of real-world systems and are also more amenable to evaluation than general-sum problems. Standardised environments such as the ALE and MuJoCo have allowed single-agent RL to move beyond toy domains, such as grid worlds. However, there is no comparable benchmark for cooperative multi-agent RL. As a result, most papers in this field use one-off toy problems, making it difficult to measure real progress. In this paper, we propose the StarCraft Multi-Agent Challenge (SMAC) as a benchmark problem to fill this gap. SMAC is based on the popular real-time strategy game StarCraft II and focuses on micromanagement challenges where each unit is controlled by an independent agent that must act based on local observations. We offer a diverse set of challenge maps and recommendations for best practices in benchmarking and evaluations. We also open-source a deep multi-agent RL learning framework including state-of-the-art algorithms. We believe that SMAC can provide a standard benchmark environment for years to come. Videos of our best agents for several SMAC scenarios are available <a href="https://bit.ly/2wJhYxo">here</a>.</p>
+ -->
+		      In the last few years, deep multi-agent reinforcement learning (RL) has become a highly active area of research. A particularly challenging class of problems in this area is partially observable, cooperative, multi-agent learning, in which teams of agents must learn to coordinate their behaviour while conditioning only on their private observations. This is an attractive research area since such problems are relevant to a large number of real-world systems and are also more amenable to evaluation than general-sum problems. Standardised environments such as the ALE and MuJoCo have allowed single-agent RL to move beyond toy domains, such as grid worlds. However, there is no comparable benchmark for cooperative multi-agent RL. As a result, most papers in this field use one-off toy problems, making it difficult to measure real progress. In this paper, we propose the StarCraft Multi-Agent Challenge (SMAC) as a benchmark problem to fill this gap. SMAC is based on the popular real-time st... [<a href="https://oatml.cs.ox.ac.uk/publications/201902_Samvelyan2019SMAC.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" />Mikayel Samvelyan, Tabish Rashid, Christian Schroeder de Witt, Gregory Farquhar, Nantas Nardelli, <a href="index.html">Tim G. J. Rudner</a>, Chia-Man Hung, Philip H. S. Torr, Jakob Foerster, Shimon Whiteson
+		    <br>
+		    <i><b>AAMAS 2019</b></i> <br> <i>NeurIPS 2019 Workshop on Deep Reinforcement Learning</i> <br> [<a href="https://arxiv.org/abs/1902.04043" target="_blank">arXiv</a>] [<a href="https://github.com/oxwhirl/smac" target="_blank">Code</a>] [<a href="../../bibtex/Samvelyan2019SMAC.bib" target="_blank">BibTex</a>] [<a href="http://whirl.cs.ox.ac.uk/blog/smac" target="_blank">Media</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Rudner2019Multi3Net" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1812.01756" target="_blank">
+		        <img src="../../images/multi3net.jpg" title="Multi&sup3Net: Segmenting Flooded Buildings via Fusion of Multiresolution, Multisensor, and Multitemporal Satellite Imagery" alt="Multi&sup3Net: Segmenting Flooded Buildings via Fusion of Multiresolution, Multisensor, and Multitemporal Satellite Imagery" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Multi&sup3Net: Segmenting Flooded Buildings via Fusion of Multiresolution, Multisensor, and Multitemporal Satellite Imagery</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Multi&sup3Net: Segmenting Flooded Buildings via Fusion of Multiresolution, Multisensor, and Multitemporal Satellite Imagery</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>We propose a novel approach for rapid segmentation of flooded buildings by fusing multiresolution, multisensor, and multitemporal satellite imagery in a convolutional neural network. Our model significantly expedites the generation of satellite imagery-based flood maps, crucial for first responders and local authorities in the early stages of flood events. By incorporating multitemporal satellite imagery, our model allows for rapid and accurate post-disaster damage assessment and can be used by governments to better coordinate medium- and long-term financial assistance programs for affected areas. The network consists of multiple streams of encoder-decoder architectures that extract spatiotemporal information from medium-resolution images and spatial information from high-resolution images before fusing the resulting representations into a single medium-resolution segmentation map of flooded buildings. We compare our model to state-of-the-art methods for building footprint segmentation as well as to alternative fusion approaches for the segmentation of flooded buildings and find that our model performs best on both tasks. We also demonstrate that our model produces highly accurate segmentation maps of flooded buildings using only publicly available medium-resolution data instead of significantly more detailed but sparsely available very high-resolution data. We release the first open-source dataset of fully preprocessed and labeled multiresolution, multispectral, and multitemporal satellite images of disaster sites along with our source code.</p>
+ -->
+		      We propose a novel approach for rapid segmentation of flooded buildings by fusing multiresolution, multisensor, and multitemporal satellite imagery in a convolutional neural network. Our model significantly expedites the generation of satellite imagery-based flood maps, crucial for first responders and local authorities in the early stages of flood events. By incorporating multitemporal satellite imagery, our model allows for rapid and accurate post-disaster damage assessment and can be used by governments to better coordinate medium- and long-term financial assistance programs for affected areas. The network consists of multiple streams of encoder-decoder architectures that extract spatiotemporal information from medium-resolution images and spatial information from high-resolution images before fusing the resulting representations into a single medium-resolution segmentation map of flooded buildings. We compare our model to state-of-the-art methods for building footprint segmenta... [<a href="https://oatml.cs.ox.ac.uk/publications/201902_Rudner2019Multi3Net.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Tim G. J. Rudner</a>, Marc Rußwurm, Jakub Fil, Ramona Pelich, Benjamin Bischke, Veronika Kopackova, Piotr Bilinski
+		    <br>
+		    <i><b>AAAI 2019</b></i> <br> <i>NeurIPS 2018 Workshop AI for Social Good</i> <br> [<a href="https://arxiv.org/abs/1812.01756" target="_blank">arXiv</a>] [<a href="https://github.com/FrontierDevelopmentLab/multi3net" target="_blank">Code</a>] [<a href="../../bibtex/Rudner2019Multi3Net.bib" target="_blank">BibTex</a>] [<a href="https://fdleurope.org/fdl-europe-2018#block-yui_3_17_2_1_1549364366960_29703" target="_blank">Media</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="RudnerGalTeh2018NPsasGPs" style="text-align: center;">
+		    <span class="images">
+		      <a href="http://bayesiandeeplearning.org/2018/papers/128.pdf" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/nps_as_gps.jpg" title="On the Connection between Neural Processes and Gaussian Processes with Deep Kernels" alt="On the Connection between Neural Processes and Gaussian Processes with Deep Kernels" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>On the Connection between Neural Processes and Gaussian Processes with Deep Kernels</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>On the Connection between Neural Processes and Gaussian Processes with Deep Kernels</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Neural Processes (NPs) are a class of neural latent variable models that combine desirable properties of Gaussian Processes (GPs) and neural networks. Like GPs, NPs define distributions over functions and are able to estimate the uncertainty in their predictions. Like neural networks, NPs are computationally efficient during training and prediction time. We establish a simple and explicit connection between NPs and GPs. In particular, we show that, under certain conditions, NPs are mathematically equivalent to GPs with deep kernels. This result further elucidates the relationship between GPs and NPs and makes previously derived theoretical insights about GPs applicable to NPs. Furthermore, it suggests a novel approach to learning expressive GP covariance functions applicable across different prediction tasks by training a deep kernel GP on a set of datasets</p>
+ -->
+		      Neural Processes (NPs) are a class of neural latent variable models that combine desirable properties of Gaussian Processes (GPs) and neural networks. Like GPs, NPs define distributions over functions and are able to estimate the uncertainty in their predictions. Like neural networks, NPs are computationally efficient during training and prediction time. We establish a simple and explicit connection between NPs and GPs. In particular, we show that, under certain conditions, NPs are mathematically equivalent to GPs with deep kernels. This result further elucidates the relationship between GPs and NPs and makes previously derived theoretical insights about GPs applicable to NPs. Furthermore, it suggests a novel approach to learning expressive GP covariance functions applicable across different prediction tasks by training a deep kernel GP on a set of datasets
+</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Tim G. J. Rudner</a>, Vincent Fortuin, Yee Whye Teh, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i><b>Workshop on Bayesian Deep Learning, NeurIPS 2018</b></i> <br> [<a href="http://bayesiandeeplearning.org/2018/papers/128.pdf" target="_blank">Paper</a>] [<a href="../../bibtex/RudnerGalTeh2018NPsasGPs.bib" target="_blank">BibTex</a>]
+		  </div>
+		</div><br>
+<br>
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Reproducibility and Code</p>
+</header><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="bdlb" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/OATML/bdl-benchmarks" target="_blank">
+		        <img src="../../images/BDLB3.PNG" title="Code for Bayesian Deep Learning Benchmarks" alt="Code for Bayesian Deep Learning Benchmarks" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Code for Bayesian Deep Learning Benchmarks</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for Bayesian Deep Learning Benchmarks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <p>In order to make real-world difference with <strong>Bayesian Deep Learning</strong> (BDL) tools, the tools must scale to real-world settings. And for that we, the research community, must be able to evaluate our inference tools (and iterate quickly) with real-world benchmark tasks. We should be able to do this without necessarily worrying about application-specific domain knowledge, like the expertise often required in medical applications for example. We require benchmarks to test for inference robustness, performance, and accuracy, in addition to cost and effort of development. These benchmarks should be at a variety of scales, ranging from toy MNIST-scale benchmarks for fast development cycles, to large data benchmarks which are truthful to real-world applications, capturing their constraints.</p>
+
+		    </p>
+		    <a href="https://github.com/OATML/bdl-benchmarks" target="_blank">Code</a><hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Rudner2019Multi3Net" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/FrontierDevelopmentLab/multi3net" target="_blank">
+		        <img src="../../images/multi3net.jpg" title="Code for Multi&sup3Net (multitemporal satellite imagery segmentation)" alt="Code for Multi&sup3Net (multitemporal satellite imagery segmentation)" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Code for Multi&sup3Net (multitemporal satellite imagery segmentation)</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for Multi&sup3Net (multitemporal satellite imagery segmentation)</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <p>We propose a novel approach for rapid segmentation of flooded buildings by fusing multiresolution, multisensor, and multitemporal satellite imagery in a convolutional neural network. Our model significantly expedites the generation of satellite imagery-based flood maps, crucial for first responders and local authorities in the early stages of flood events. By incorporating multitemporal satellite imagery, our model allows for rapid and accurate post-disaster damage assessment and can be used by governments to better coordinate medium- and long-term financial assistance programs for affected areas. The network consists of multiple streams of encoder-decoder architectures that extract spatiotemporal information from medium-resolution images and spatial information from high-resolution images before fusing the resulting representations into a single medium-resolution segmentation map of flooded buildings. We compare our model to state-of-the-art methods for building footprint segmentation as well as to alternative fusion approaches for the segmentation of flooded buildings and find that our model performs best on both tasks. We also demonstrate that our model produces highly accurate segmentation maps of flooded buildings using only publicly available medium-resolution data instead of significantly more detailed but sparsely available very high-resolution data. We release the first open-source dataset of fully preprocessed and labeled multiresolution, multispectral, and multitemporal satellite images of disaster sites along with our source code.</p>
+
+		    </p>
+		    <a href="https://github.com/FrontierDevelopmentLab/multi3net" target="_blank">Code</a>, 
+		    <a href="../../publications.html#Rudner2019Multi3Net">Publication</a><hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Tim G. J. Rudner</a>, Marc Rußwurm, Jakub Fil, Ramona Pelich, Benjamin Bischke, Veronika Kopackova, Piotr Bilinski
+		  </div>
+		</div><!-- reset colours.. -->
+<div class="row" id="my_div_grid" style="visibility: hidden;">
+</div><br>
+<br>
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Blog Posts</p>
+</header><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="ICML_2020" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://oatml.cs.ox.ac.uk/blog/2020/07/10/ICML_2020.html">
+		        <img src="https://oatml.cs.ox.ac.uk//images/icml.jpg" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>13 OATML Conference and Workshop papers at ICML 2020</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>We are glad to share the following 13 papers by OATML authors and collaborators to be presented at this ICML conference and workshops …</p>
+
+	    	        <a href="https://oatml.cs.ox.ac.uk/blog/2020/07/10/ICML_2020.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="index.html">Tim G. J. Rudner</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/lisa_schut/">Lisa Schut</a>, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>, <a href="https://oatml.cs.ox.ac.uk/members/pascal_notin/">Pascal Notin</a>, <a href="../andreas_kirsch/index.html">Andreas Kirsch</a>, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/jishnu_mukhoti/">Jishnu Mukhoti</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>10 Jul 2020</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="NeurIPS_2019" style="text-align: center;">
+		    <span class="images">
+		      <a href="../../blog/2019/12/08/NeurIPS_2019.html">
+		        <img src="https://oatml.cs.ox.ac.uk//images/vancouver_image.jpg" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>25 OATML Conference and Workshop papers at NeurIPS 2019</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>We are glad to share the following 25 papers by OATML authors and collaborators to be presented at this NeurIPS conference and workshops. …</p>
+
+	    	        <a href="../../blog/2019/12/08/NeurIPS_2019.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>, <a href="../andreas_kirsch/index.html">Andreas Kirsch</a>, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>08 Dec 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="bdlb" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/OATML/bdl-benchmarks">
+		        <img src="https://oatml.cs.ox.ac.uk//images/BDLB3.PNG" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Bayesian Deep Learning Benchmarks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>In order to make real-world difference with <strong>Bayesian Deep Learning</strong> (BDL) tools, the tools must scale to real-world settings. And for that we, the research community, must be able to evaluate our inference tools (and iterate quickly) with real-world benchmark tasks. We should be able to do this without necessarily worrying about application-specific domain knowledge, like the expertise often required in medical applications for example. We require benchmarks to test for inference robustness, performance, and accuracy, in addition to cost and effort of development. These benchmarks should be at a variety of scales, ranging from toy MNIST-scale benchmarks for fast development cycles, to large data benchmarks which are truthful to real-world applications, capturing their constraints. …</p>
+
+	    	        <a href="https://github.com/OATML/bdl-benchmarks">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>14 Jun 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div></div>
+		</div>
+	</div>
+</section>
+
+
+		<!-- Contact -->
+		<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header>
+            <!-- <h2><a href="contact.html" id="my_headline">Contact</a></h2> -->
+            <h2>Contact</h2>
+            <div class="row 200%">
+                <div class="6u 12u$(medium) left">
+                    <b>We are located at </b> <br>
+                    <a href="https://goo.gl/maps/Y6xinHJ5T7o" target="_blank">Department of
+                      Computer Science, University of Oxford</a><br>
+                    Wolfson Building<br>
+                    Parks Road<br>
+                    OXFORD<br>
+                    OX1 3QD<br>
+                    UK
+                </div>
+                <div class="6u 12u$(medium)">
+                    <b>Twitter</b>: <a href="https://twitter.com/OATML_Oxford" target="_blank">@OATML_Oxford</a><br>
+                    <b>Github</b>: <a href="https://github.com/oatml" target="_blank">OATML</a><br>
+                    <b>Email</b>: <a href="mailto:oatml@cs.ox.ac.uk">oatml@cs.ox.ac.uk</a>
+                </div>
+            </div>
+            <footer class="align-center">
+                <p></p>
+                <br>
+                <h4>Are you looking to do a PhD in machine learning? Did you do a PhD in another field and want to do a postdoc in machine learning? Would you like to visit the group?</h4>
+                <!-- <a href="contact.html" class="button alt">How to get here</a> -->
+                <a href="https://oatml.cs.ox.ac.uk/apply.html" class="button alt">How to apply</a>
+            </footer>
+            <br>
+            <br>
+        </header>
+    </div>
+</section>
+
+
+		<!-- Footer -->
+					<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/OATML_Oxford" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/OATML" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="contact.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li> -->
+						<li><a href="mailto:oatml@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Yarin Gal. All rights reserved. Template was adapted from <a href="https://templated.co/" target="_blank">Templated</a> and some photos are used from <a href="http://commons.wikimedia.org" target="_blank">Wikimedia</a> under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CCA 3.0</a> licence.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+					<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/skel.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/util.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/main.js"></script>
+
+	</body>
+</html>

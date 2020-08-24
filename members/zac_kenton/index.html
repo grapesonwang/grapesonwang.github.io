@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+
+
+
+	<title>Zac Kenton | OATML | Oxford Applied and Theoretical Machine Learning Group</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45108170-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-45108170-4');
+	</script>
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<meta name="description" content="Zac is a Postdoc in OATML under Yarin Gal. His primary research interest is technical AI safety, and is currently working on robustness and safe exploration in reinforcement learning." />
+	<meta name="keywords" content="Zac Kenton,Zac Kenton | OATML | Oxford Applied and Theoretical Machine Learning Group,OATML,Oxford,Machine learning,ML,Artificial intelligence,AI,Deep learning,DL,Bayesian deep learning,BDL,Bayesian,Bayesian modelling,Probabilistic modelling,Research group,Resarch,Fundamental Research,Pragmatic research,Yarin,Gal,Yarin Gal,yaringal" />
+	<meta charset="utf-8" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://oatml.cs.ox.ac.uk/assets/css/main.css" />
+
+    <link rel="apple-touch-icon-precomposed" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="https://oatml.cs.ox.ac.uk/images/favicon.ico">
+
+	<meta property="og:title" content="Zac Kenton | OATML | Oxford Applied and Theoretical Machine Learning Group" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://oatml.cs.ox.ac.uk/./images/member_zk.jpg" />
+	<meta property="og:description" content="Zac is a Postdoc in OATML under Yarin Gal. His primary research interest is technical AI safety, and is currently working on robustness and safe exploration in reinforcement learning." />
+	<style type="text/css">
+		.my_headline {
+			color: inherit !important;
+			font-weight: inherit;
+			text-decoration: inherit;
+		}
+		/*.my_logo {display: block !important; margin: auto; padding: 20px 0px 20px 0px; width: 50%;}*/
+		.my_logo {
+			display: block !important;
+			margin: auto;
+			padding: 20px 0px 20px 0px;
+			max-height: 70%;
+		}
+		.banner > article .inner {height: 100%}
+		.banner > article .inner > header {height: 85%}
+		.banner_top {height: 15%}
+		body.is-mobile .banner_top {height: 5%}
+		@media screen and (max-width: 980px) {
+			.banner_top {height: 10%}
+			.my_logo {max-height: 50%}
+		}
+		.my_box_image {overflow: hidden; max-height: 50px;}
+		.my_news_div {padding: 0 !important}
+		.my_news_div div {margin: 0em 1em 1em 1em}
+		.my_news_div div header h4 {
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #484848 !important;
+			word-spacing: 3pt;
+		}
+		.my_news_div div header p {
+			font-size: 0.9em;
+			color: #aaa !important;
+			margin-top: -0.6em;
+			margin-bottom: 0.1em;
+		}
+		.my_news_span {
+			padding: 0 !important;
+			background-color: transparent !important;
+		}
+		.my_news_span img {
+			border-radius: 100%;
+			width: 100%;
+			border: solid 0.5em rgba(144, 144, 144, 0.25);
+		}
+		div #my_div_grid:nth-child(2n) {
+			background-color: rgba(0, 0, 0, 0.075);
+		}
+		div #my_div_grid {
+			padding: 1rem 0rem 1rem 0rem;
+			margin: 0;
+		}
+		.wrapper.style3.pageheader {
+			background-size: 100% !important;
+			background-position: top !important;
+			background-image: url('https://oatml.cs.ox.ac.uk/images/bg_crop.jpg') !important;
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			.wrapper.style3.pageheader {background-size: 200% !important;}
+			.ox-link {display: none;}
+			.group-title-link {display: none;}
+			.group-title-link-short {display: inline;}
+			div.my_news_div div.fit {
+				text-align : inherit !important;
+			}
+			span.my_news_span.image.right {
+				float : left;
+				margin: 0 1.5rem 1rem 0;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 435px) {
+			.my_header {
+				min-height: 120pt !important;
+			}
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) {
+			.group-title-link-short {display: none;}
+			.group-title-link {
+				display: inline;
+				vertical-align: bottom !important;
+				border-left: 2px solid white;
+				height: 500px;
+				padding: 0px 0px 0px 10px;
+				margin: 0px 0px 0px 10px;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_mobile.jpg') !important;
+				}
+			
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) and (max-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2.jpg') !important;
+				}
+			
+		}
+		/* Huge screens */
+		@media screen and (min-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_huge.jpg') !important;
+				}
+			
+		}
+		/* Mobile screens */
+		@media screen and (max-height: 600px) {
+			.indicators {display: none;}
+		}
+	</style>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+					<header id="header" class="alt">
+				<div class="logo">
+					<img src="https://oatml.cs.ox.ac.uk/images/cs_logo.png" class="ox-link" style="height: 58px; vertical-align: top !important" alt="University of Oxford Department of Computer Science" usemap="#compscimap" />
+					<map name="compscimap" id="compscimap">
+                                <area shape="rect" coords="0,0,55,55" href="http://www.ox.ac.uk/" alt="University of Oxford" title="University of Oxford"/>
+                                <area shape="rect" coords="65,0,170,55" href="http://www.cs.ox.ac.uk/" alt="Department of Computer Science - Home" title="Department of Computer Science - Home"/>
+                    </map>
+					<a href="../../index.html" class="group-title-link">
+						<!-- <img src="images/logo.png" style="height: 55px" alt="Group Home"> -->
+						Group Home
+					</a>
+					<a href="../../index.html" class="group-title-link-short">
+						Home
+					</a>
+				</div>
+				<a href="index.html#menu">Menu</a>
+			</header>
+
+
+		<!-- Nav -->
+					<nav id="menu">
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../../news.html">News</a></li>
+					<li><a href="../../publications.html">Publications</a></li>
+					<li><a href="../../code.html">Reproducibility and Code</a></li>
+					<li><a href="../../blog.html">Blog</a></li>
+					<li><a href="../../members.html">Group Members</a></li>
+					<!-- <li><a href="research.html">Research Themes</a></li> -->
+					<li><a href="https://oatml.cs.ox.ac.uk/apply.html">Apply to the Group</a></li>
+					<!-- <li><a href="contact.html">Contact</a></li> -->
+				</ul>
+			</nav>
+
+
+		<!-- One -->
+					<section id="One" class="wrapper style3 pageheader">
+				<div class="inner">
+					<header class="align-center">
+						<p>Oxford Applied and Theoretical Machine Learning Group</p>
+						<h1>OATML</h1>
+					</header>
+				</div>
+			</section>
+
+		<section id="two" class="wrapper style2">
+	<div class="inner">
+		<div class="box">
+			<div class="content">
+
+<header class="align-left">
+    <h4><a href="../../members.html">Back to all members...</a></h4>
+</header>
+
+<header class="align-center">
+	<p>Zac Kenton</p>
+	<h3>Postdoc (2018&mdash;2019)</h3>
+	<ul class="icons">
+	
+		<li><a href="https://twitter.com/ZacKenton1" target="_blank" class="icon fa-twitter"><span class="label"></span></a></li>
+	
+	
+		<li><a href="https://github.com/zackenton" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+	
+	
+		<li><a href="mailto:zachary.kenton@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+	
+	
+		<li><a href="https://zackenton.github.io/" class="icon fa-globe" target="_blank"><span class="label">Web</span></a></li>
+	
+	
+	</ul>
+</header>
+
+<div class="4u 12u$(small)" style="margin-left: auto; margin-right: auto;">
+    <span class="image main">
+        <img src="../../images/member_zk.jpg" alt="" />
+    </span>
+</div>
+
+
+<p>
+<p>Zac was a Postdoc in OATML working with Yarin Gal. His primary research interest is technical AI safety, and is currently working on robustness and safe exploration in reinforcement learning. He was previously a Research Assistant with Owain Evans at the <a href="https://www.fhi.ox.ac.uk/">Future of Humanity Institute</a>, University of Oxford and a Visiting Researcher at the <a href="https://mila.quebec/en/">Montreal Institute for Learning Algorithms (MILA)</a>, under <a href="http://www.iro.umontreal.ca/~bengioy/yoshua_en/">Yoshua Bengio</a>. He also worked as a Data Scientist at ASI Data Science. He completed his PhD at Queen Mary University of London in Theoretical Physics, where he worked on string theory and cosmology. Prior to his PhD, he studied Mathematics at the University of Cambridge.
+After OATML, Zac joined the DeepMind AGI safety team.</p>
+
+</p>
+
+
+
+
+
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Publications</p>
+</header>
+<div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="OATML2019DiabeticRetinopathyDiagnosis" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1912.10481" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/diabetic_retinopathy_diagnosis.jpg" title="A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks" alt="A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>A Systematic Comparison of Bayesian Deep Learning Robustness in Diabetic Retinopathy Tasks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Evaluation of Bayesian deep learning (BDL) methods is challenging. We often seek to evaluate the methods’ robustness and scalability, assessing whether new tools give ‘better’ uncertainty estimates than old ones. These evaluations are paramount for practitioners when choosing BDL tools on-top of which they build their applications. Current popular evaluations of BDL methods, such as the UCI experiments, are lacking: Methods that excel with these experiments often fail when used in application such as medical or automotive, suggesting a pertinent need for new benchmarks in the field. We propose a new BDL benchmark with a diverse set of tasks, inspired by a real-world medical imaging application on diabetic retinopathy diagnosis. Visual inputs (512x512 RGB images of retinas) are considered, where model uncertainty is used for medical pre-screening—i.e. to refer patients to an expert when model diagnosis is uncertain. Methods are then ranked according to metrics derived from expert-domain to reflect real-world use of model uncertainty in automated diagnosis. We develop multiple tasks that fall under this application, including out-of-distribution detection and robustness to distribution shift. We then perform a systematic comparison of well-tuned BDL techniques on the various tasks. From our comparison we conclude that some current techniques which solve benchmarks such as UCI `overfit’ their uncertainty to the dataset—when evaluated on our benchmark these underperform in comparison to simpler baselines. The code for the benchmark, its baselines, and a simple API for evaluating new BDL tools are made available at https://github.com/oatml/bdl-benchmarks.</p>
+ -->
+		      Evaluation of Bayesian deep learning (BDL) methods is challenging. We often seek to evaluate the methods' robustness and scalability, assessing whether new tools give 'better' uncertainty estimates than old ones. These evaluations are paramount for practitioners when choosing BDL tools on-top of which they build their applications. Current popular evaluations of BDL methods, such as the UCI experiments, are lacking: Methods that excel with these experiments often fail when used in application such as medical or automotive, suggesting a pertinent need for new benchmarks in the field. We propose a new BDL benchmark with a diverse set of tasks, inspired by a real-world medical imaging application on diabetic retinopathy diagnosis. Visual inputs (512x512 RGB images of retinas) are considered, where model uncertainty is used for medical pre-screening---i.e. to refer patients to an expert when model diagnosis is uncertain. Methods are then ranked according to metrics derived from expert-... [<a href="https://oatml.cs.ox.ac.uk/publications/201907_OATML2019DiabeticRetinopathyDiagnosis.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, Arnoud de Kroon, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i>Preprint, 2019</i> <br> [<a href="http://www.cs.ox.ac.uk/people/angelos.filos/publications/diabetic_retinopathy_diagnosis.pdf" target="_blank">Preprint</a>] [<a href="../../bibtex/OATML2019DiabeticRetinopathyDiagnosis.bib" target="_blank">BibTex</a>] [<a href="https://github.com/OATML/bdl-benchmarks" target="_blank">Code</a>] <br> <i>arXiv, 2019</i> <br> [<a href="http://arxiv.org/abs/1912.10481" target="_blank">arXiv</a>] <br> <b><span style="color:red">Spotlight talk</span>, <i>Workshop on Bayesian Deep Learning, NeurIPS 2019</i></b> <br> [<a href="http://bayesiandeeplearning.org/2019/papers/12.pdf" target="_blank">Paper</a>]
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="Kenton2019Generalization" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://zackenton.github.io/files/Generalizing_Limited_Environments.pdf" target="_blank">
+		        <img src="https://oatml.cs.ox.ac.uk/images/gridworld.jpg" title="Generalizing from a few environments in safety-critical reinforcement learning" alt="Generalizing from a few environments in safety-critical reinforcement learning" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Generalizing from a few environments in safety-critical reinforcement learning</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Generalizing from a few environments in safety-critical reinforcement learning</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>Before deploying autonomous agents in the real world, we need to be confident they will perform safely in novel situations. Ideally, we would expose agents to a very wide range of situations during training (e.g. many simulated environments), allowing them to learn about every possible danger. But this is often impractical: simulations may fail to capture the full range of situations and may differ subtly from reality. This paper investigates generalizing from a limited number of training environments in deep reinforcement learning. Our experiments test whether agents can perform safely in novel environments, given varying numbers of environments at train time. Using a gridworld setting, we find that standard deep RL agents do not reliably avoid catastrophes on unseen environments – even after performing near optimally on 1000 training environments. However, we show that catastrophes can be significantly reduced (but not eliminated) with simple modifications, including Q-network ensembling to represent uncertainty and the use of a classifier trained to recognize dangerous actions.</p>
+ -->
+		      Before deploying autonomous agents in the real world, we need to be confident they will perform safely in novel situations. Ideally, we would expose agents to a very wide range of situations during training (e.g. many simulated environments), allowing them to learn about every possible danger. But this is often impractical: simulations may fail to capture the full range of situations and may differ subtly from reality. This paper investigates generalizing from a limited number of training environments in deep reinforcement learning. Our experiments test whether agents can perform safely in novel environments, given varying numbers of environments at train time. Using a gridworld setting, we find that standard deep RL agents do not reliably avoid catastrophes on unseen environments – even after performing near optimally on 1000 training environments. However, we show that catastrophes can be significantly reduced (but not eliminated) with simple modifications, including Q-network en... [<a href="https://oatml.cs.ox.ac.uk/publications/201903_Kenton2019Generalization.html">full abstract</a>]</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Zac Kenton</a>, <a href="../angelos_filos/index.html">Angelos Filos</a>, Owain Evans, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i><b>ICLR 2019 Workshop on Safe Machine Learning</b></i> <br> [<a href="https://zackenton.github.io/files/Generalizing_Limited_Environments.pdf" target="_blank">paper</a>]
+		  </div>
+		</div><br>
+<br>
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Reproducibility and Code</p>
+</header><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="bdlb" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/OATML/bdl-benchmarks" target="_blank">
+		        <img src="../../images/BDLB3.PNG" title="Code for Bayesian Deep Learning Benchmarks" alt="Code for Bayesian Deep Learning Benchmarks" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Code for Bayesian Deep Learning Benchmarks</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for Bayesian Deep Learning Benchmarks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <p>In order to make real-world difference with <strong>Bayesian Deep Learning</strong> (BDL) tools, the tools must scale to real-world settings. And for that we, the research community, must be able to evaluate our inference tools (and iterate quickly) with real-world benchmark tasks. We should be able to do this without necessarily worrying about application-specific domain knowledge, like the expertise often required in medical applications for example. We require benchmarks to test for inference robustness, performance, and accuracy, in addition to cost and effort of development. These benchmarks should be at a variety of scales, ranging from toy MNIST-scale benchmarks for fast development cycles, to large data benchmarks which are truthful to real-world applications, capturing their constraints.</p>
+
+		    </p>
+		    <a href="https://github.com/OATML/bdl-benchmarks" target="_blank">Code</a><hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		  </div>
+		</div><!-- reset colours.. -->
+<div class="row" id="my_div_grid" style="visibility: hidden;">
+</div><br>
+<br>
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Blog Posts</p>
+</header><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="NeurIPS_2019" style="text-align: center;">
+		    <span class="images">
+		      <a href="../../blog/2019/12/08/NeurIPS_2019.html">
+		        <img src="https://oatml.cs.ox.ac.uk//images/vancouver_image.jpg" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>25 OATML Conference and Workshop papers at NeurIPS 2019</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>We are glad to share the following 25 papers by OATML authors and collaborators to be presented at this NeurIPS conference and workshops. …</p>
+
+	    	        <a href="../../blog/2019/12/08/NeurIPS_2019.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>, <a href="../andreas_kirsch/index.html">Andreas Kirsch</a>, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>08 Dec 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="poor_generalization_in_rl" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://oatml.cs.ox.ac.uk/blog/2019/07/02/poor_generalization_in_rl.html">
+		        <img src="https://oatml.cs.ox.ac.uk//blog/2019/07/02/assets/reveal.gif" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Poor generalization can be dangerous in RL!</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>We want to develop reinforcement learning (RL) agents that can be trusted to act in high-stakes situations in the
+real world. That means we need to generalize about common dangers that we might have experienced before, but in an unseen
+setting. For example, we know it is dangerous to touch a hot oven, even if it’s in a room we haven’t been in
+before.
+ …</p>
+
+	    	        <a href="https://oatml.cs.ox.ac.uk/blog/2019/07/02/poor_generalization_in_rl.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Zac Kenton</a>, <a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>02 Jul 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="bdlb" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/OATML/bdl-benchmarks">
+		        <img src="https://oatml.cs.ox.ac.uk//images/BDLB3.PNG" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Bayesian Deep Learning Benchmarks</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>In order to make real-world difference with <strong>Bayesian Deep Learning</strong> (BDL) tools, the tools must scale to real-world settings. And for that we, the research community, must be able to evaluate our inference tools (and iterate quickly) with real-world benchmark tasks. We should be able to do this without necessarily worrying about application-specific domain knowledge, like the expertise often required in medical applications for example. We require benchmarks to test for inference robustness, performance, and accuracy, in addition to cost and effort of development. These benchmarks should be at a variety of scales, ranging from toy MNIST-scale benchmarks for fast development cycles, to large data benchmarks which are truthful to real-world applications, capturing their constraints. …</p>
+
+	    	        <a href="https://github.com/OATML/bdl-benchmarks">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>14 Jun 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div></div>
+		</div>
+	</div>
+</section>
+
+
+		<!-- Contact -->
+		<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header>
+            <!-- <h2><a href="contact.html" id="my_headline">Contact</a></h2> -->
+            <h2>Contact</h2>
+            <div class="row 200%">
+                <div class="6u 12u$(medium) left">
+                    <b>We are located at </b> <br>
+                    <a href="https://goo.gl/maps/Y6xinHJ5T7o" target="_blank">Department of
+                      Computer Science, University of Oxford</a><br>
+                    Wolfson Building<br>
+                    Parks Road<br>
+                    OXFORD<br>
+                    OX1 3QD<br>
+                    UK
+                </div>
+                <div class="6u 12u$(medium)">
+                    <b>Twitter</b>: <a href="https://twitter.com/OATML_Oxford" target="_blank">@OATML_Oxford</a><br>
+                    <b>Github</b>: <a href="https://github.com/oatml" target="_blank">OATML</a><br>
+                    <b>Email</b>: <a href="mailto:oatml@cs.ox.ac.uk">oatml@cs.ox.ac.uk</a>
+                </div>
+            </div>
+            <footer class="align-center">
+                <p></p>
+                <br>
+                <h4>Are you looking to do a PhD in machine learning? Did you do a PhD in another field and want to do a postdoc in machine learning? Would you like to visit the group?</h4>
+                <!-- <a href="contact.html" class="button alt">How to get here</a> -->
+                <a href="https://oatml.cs.ox.ac.uk/apply.html" class="button alt">How to apply</a>
+            </footer>
+            <br>
+            <br>
+        </header>
+    </div>
+</section>
+
+
+		<!-- Footer -->
+					<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/OATML_Oxford" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/OATML" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="contact.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li> -->
+						<li><a href="mailto:oatml@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Yarin Gal. All rights reserved. Template was adapted from <a href="https://templated.co/" target="_blank">Templated</a> and some photos are used from <a href="http://commons.wikimedia.org" target="_blank">Wikimedia</a> under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CCA 3.0</a> licence.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+					<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/skel.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/util.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/main.js"></script>
+
+	</body>
+</html>

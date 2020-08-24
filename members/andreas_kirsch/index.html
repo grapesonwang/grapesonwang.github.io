@@ -1,0 +1,624 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+
+
+
+	<title>Andreas Kirsch | OATML | Oxford Applied and Theoretical Machine Learning Group</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45108170-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-45108170-4');
+	</script>
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<meta name="description" content="Andreas is a 2nd-year DPhil with Yarin Gal in the AIMS program. He is interested in Bayesian Deep Learning, and ethics and safety in AI." />
+	<meta name="keywords" content="Andreas Kirsch,Andreas Kirsch | OATML | Oxford Applied and Theoretical Machine Learning Group,OATML,Oxford,Machine learning,ML,Artificial intelligence,AI,Deep learning,DL,Bayesian deep learning,BDL,Bayesian,Bayesian modelling,Probabilistic modelling,Research group,Resarch,Fundamental Research,Pragmatic research,Yarin,Gal,Yarin Gal,yaringal" />
+	<meta charset="utf-8" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://oatml.cs.ox.ac.uk/assets/css/main.css" />
+
+    <link rel="apple-touch-icon-precomposed" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="https://oatml.cs.ox.ac.uk/images/favicon.ico">
+
+	<meta property="og:title" content="Andreas Kirsch | OATML | Oxford Applied and Theoretical Machine Learning Group" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://oatml.cs.ox.ac.uk/./images/member_ak.jpg" />
+	<meta property="og:description" content="Andreas is a 2nd-year DPhil with Yarin Gal in the AIMS program. He is interested in Bayesian Deep Learning, and ethics and safety in AI." />
+	<style type="text/css">
+		.my_headline {
+			color: inherit !important;
+			font-weight: inherit;
+			text-decoration: inherit;
+		}
+		/*.my_logo {display: block !important; margin: auto; padding: 20px 0px 20px 0px; width: 50%;}*/
+		.my_logo {
+			display: block !important;
+			margin: auto;
+			padding: 20px 0px 20px 0px;
+			max-height: 70%;
+		}
+		.banner > article .inner {height: 100%}
+		.banner > article .inner > header {height: 85%}
+		.banner_top {height: 15%}
+		body.is-mobile .banner_top {height: 5%}
+		@media screen and (max-width: 980px) {
+			.banner_top {height: 10%}
+			.my_logo {max-height: 50%}
+		}
+		.my_box_image {overflow: hidden; max-height: 50px;}
+		.my_news_div {padding: 0 !important}
+		.my_news_div div {margin: 0em 1em 1em 1em}
+		.my_news_div div header h4 {
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #484848 !important;
+			word-spacing: 3pt;
+		}
+		.my_news_div div header p {
+			font-size: 0.9em;
+			color: #aaa !important;
+			margin-top: -0.6em;
+			margin-bottom: 0.1em;
+		}
+		.my_news_span {
+			padding: 0 !important;
+			background-color: transparent !important;
+		}
+		.my_news_span img {
+			border-radius: 100%;
+			width: 100%;
+			border: solid 0.5em rgba(144, 144, 144, 0.25);
+		}
+		div #my_div_grid:nth-child(2n) {
+			background-color: rgba(0, 0, 0, 0.075);
+		}
+		div #my_div_grid {
+			padding: 1rem 0rem 1rem 0rem;
+			margin: 0;
+		}
+		.wrapper.style3.pageheader {
+			background-size: 100% !important;
+			background-position: top !important;
+			background-image: url('https://oatml.cs.ox.ac.uk/images/bg_crop.jpg') !important;
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			.wrapper.style3.pageheader {background-size: 200% !important;}
+			.ox-link {display: none;}
+			.group-title-link {display: none;}
+			.group-title-link-short {display: inline;}
+			div.my_news_div div.fit {
+				text-align : inherit !important;
+			}
+			span.my_news_span.image.right {
+				float : left;
+				margin: 0 1.5rem 1rem 0;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 435px) {
+			.my_header {
+				min-height: 120pt !important;
+			}
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) {
+			.group-title-link-short {display: none;}
+			.group-title-link {
+				display: inline;
+				vertical-align: bottom !important;
+				border-left: 2px solid white;
+				height: 500px;
+				padding: 0px 0px 0px 10px;
+				margin: 0px 0px 0px 10px;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_mobile.jpg') !important;
+				}
+			
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) and (max-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2.jpg') !important;
+				}
+			
+		}
+		/* Huge screens */
+		@media screen and (min-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_huge.jpg') !important;
+				}
+			
+		}
+		/* Mobile screens */
+		@media screen and (max-height: 600px) {
+			.indicators {display: none;}
+		}
+	</style>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+					<header id="header" class="alt">
+				<div class="logo">
+					<img src="https://oatml.cs.ox.ac.uk/images/cs_logo.png" class="ox-link" style="height: 58px; vertical-align: top !important" alt="University of Oxford Department of Computer Science" usemap="#compscimap" />
+					<map name="compscimap" id="compscimap">
+                                <area shape="rect" coords="0,0,55,55" href="http://www.ox.ac.uk/" alt="University of Oxford" title="University of Oxford"/>
+                                <area shape="rect" coords="65,0,170,55" href="http://www.cs.ox.ac.uk/" alt="Department of Computer Science - Home" title="Department of Computer Science - Home"/>
+                    </map>
+					<a href="../../index.html" class="group-title-link">
+						<!-- <img src="images/logo.png" style="height: 55px" alt="Group Home"> -->
+						Group Home
+					</a>
+					<a href="../../index.html" class="group-title-link-short">
+						Home
+					</a>
+				</div>
+				<a href="index.html#menu">Menu</a>
+			</header>
+
+
+		<!-- Nav -->
+					<nav id="menu">
+				<ul class="links">
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="../../news.html">News</a></li>
+					<li><a href="../../publications.html">Publications</a></li>
+					<li><a href="../../code.html">Reproducibility and Code</a></li>
+					<li><a href="../../blog.html">Blog</a></li>
+					<li><a href="../../members.html">Group Members</a></li>
+					<!-- <li><a href="research.html">Research Themes</a></li> -->
+					<li><a href="https://oatml.cs.ox.ac.uk/apply.html">Apply to the Group</a></li>
+					<!-- <li><a href="contact.html">Contact</a></li> -->
+				</ul>
+			</nav>
+
+
+		<!-- One -->
+					<section id="One" class="wrapper style3 pageheader">
+				<div class="inner">
+					<header class="align-center">
+						<p>Oxford Applied and Theoretical Machine Learning Group</p>
+						<h1>OATML</h1>
+					</header>
+				</div>
+			</section>
+
+		<section id="two" class="wrapper style2">
+	<div class="inner">
+		<div class="box">
+			<div class="content">
+
+<header class="align-left">
+    <h4><a href="../../members.html">Back to all members...</a></h4>
+</header>
+
+<header class="align-center">
+	<p>Andreas Kirsch</p>
+	<h3>PhD, started 2018</h3>
+	<ul class="icons">
+	
+		<li><a href="https://twitter.com/BlackHC" target="_blank" class="icon fa-twitter"><span class="label"></span></a></li>
+	
+	
+		<li><a href="https://github.com/BlackHC" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+	
+	
+		<li><a href="mailto:andreas.kirsch@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+	
+	
+		<li><a href="https://www.blackhc.net/" class="icon fa-globe" target="_blank"><span class="label">Web</span></a></li>
+	
+	
+		<li><a href="https://scholar.google.co.uk/citations?user=WYQVZpYAAAAJ&hl=en&oi=sra" class="ai ai-google-scholar-square ai-2x" style="text-decoration: none;" target="_blank"><span class="label"></span></a></li>
+	
+	</ul>
+</header>
+
+<div class="6u 12u$(small)" style="margin-left: auto; margin-right: auto;">
+    <span class="image main">
+        <img src="../../images/member_ak.jpg" alt="" />
+    </span>
+</div>
+
+
+<p>
+<p>Andreas is a 2nd-year DPhil with Yarin Gal in the <a href="http://aims.robots.ox.ac.uk">AIMS</a> program. He is interested in Bayesian Deep Learning, and ethics and safety in AI.
+Before joining OATML he worked at <a href="https://deepmind.com/">DeepMind</a> in London as a research engineer and for <a href="http://google.com/">Google/YouTube</a> in Zurich as a software engineer. He studied computer science and maths at the Technical University in Munich.
+While originally from Romania, he grew up in Southern Germany. He likes schnitzel, sarmale, bouldering and running. 
+He is a <a href="http://www.ox.ac.uk/clarendon">Clarendon Scholar</a>.</p>
+
+</p>
+
+
+
+
+
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Publications</p>
+</header>
+<div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="KAJvAYGBatchBALD" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://arxiv.org/abs/1906.08158" target="_blank">
+		        <img src="../../images/batchbald_teaser.png" title="BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning" alt="BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <!-- <p>We develop BatchBALD, a tractable approximation to the mutual information between a batch of points and model parameters, which we use as an acquisition function to select multiple informative points jointly for the task of deep Bayesian active learning. BatchBALD is a greedy linear-time 1−1/e-approximate algorithm amenable to dynamic programming and efficient caching. We compare BatchBALD to the commonly used approach for batch data acquisition and find that the current approach acquires similar and redundant points, sometimes performing worse than randomly acquiring data. We finish by showing that, using BatchBALD to consider dependencies within an acquisition batch, we achieve new state of the art performance on standard benchmarks, providing substantial data efficiency improvements in batch acquisition.</p>
+ -->
+		      We develop BatchBALD, a tractable approximation to the mutual information between a batch of points and model parameters, which we use as an acquisition function to select multiple informative points jointly for the task of deep Bayesian active learning. BatchBALD is a greedy linear-time 1−1/e-approximate algorithm amenable to dynamic programming and efficient caching. We compare BatchBALD to the commonly used approach for batch data acquisition and find that the current approach acquires similar and redundant points, sometimes performing worse than randomly acquiring data. We finish by showing that, using BatchBALD to consider dependencies within an acquisition batch, we achieve new state of the art performance on standard benchmarks, providing substantial data efficiency improvements in batch acquisition.
+</p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Andreas Kirsch</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		    <br>
+		    <i><b>NeurIPS, 2019</b></i> <br> [<a href="https://arxiv.org/abs/1906.08158" target="_blank">arXiv</a>] [<a href="../../bibtex/KAJvAYGBatchBALD.bib" target="_blank">BibTex</a>]
+		  </div>
+		</div><br>
+<br>
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Reproducibility and Code</p>
+</header><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="KATOMA" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/BlackHC/toma" target="_blank">
+		        <img src="../../images/CUDA.png" title="Torch Memory-adaptive Algorithms (TOMA)" alt="Torch Memory-adaptive Algorithms (TOMA)" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Torch Memory-adaptive Algorithms (TOMA)</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Torch Memory-adaptive Algorithms (TOMA)</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <p>A collection of helpers to make it easier to write code that adapts to the available (CUDA) memory. Specifically, it retries code that fails due to OOM (out-of-memory) conditions and lowers batchsizes automatically.</p>
+
+<p>To avoid failing over repeatedly, a simple cache is implemented that memorizes that last successful batchsize given the call and available free memory.</p>
+
+		    </p>
+		    <a href="https://github.com/BlackHC/toma" target="_blank">Code</a><hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Andreas Kirsch</a>
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="KABatchBALDredux" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/BlackHC/batchbald_redux" target="_blank">
+		        <img src="../../images/batchbald_teaser.png" title="Reusable BatchBALD implementation (active learning)" alt="Reusable BatchBALD implementation (active learning)" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Reusable BatchBALD implementation (active learning)</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Reusable BatchBALD implementation (active learning)</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <p>Clean reimplementation of “<a href="https://oatml.cs.ox.ac.uk/members/andreas_kirsch/publications.html#KAJvAYGBatchBALD">BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning</a>”.</p>
+
+		    </p>
+		    <a href="https://github.com/BlackHC/batchbald_redux" target="_blank">Code</a>, 
+		    <a href="../../publications.html#KAJvAYGBatchBALD">Publication</a><hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Andreas Kirsch</a>
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="AKtfpyth" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/BlackHC/TfPyTh" target="_blank">
+		        <img src="../../images/neural_network-square.jpg" title="Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters)" alt="Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters)" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters)</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters)</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <p>Do you have a codebase that uses TensorFlow and one that uses PyTorch and want to train a model that uses both end-to-end?
+This library makes it possible without having to rewrite either codebase!
+It allows you to wrap a TensorFlow graph to make it callable (and differentiable) through PyTorch, and vice-versa, using simple functions.</p>
+
+		    </p>
+		    <a href="https://github.com/BlackHC/TfPyTh" target="_blank">Code</a><hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Andreas Kirsch</a>
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="KAJvAYGBatchBALD" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://github.com/BlackHC/BatchBALD" target="_blank">
+		        <img src="../../images/batchbald_teaser.png" title="Code for BatchBALD blog post and paper (active learning)" alt="Code for BatchBALD blog post and paper (active learning)" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b>Code for BatchBALD blog post and paper (active learning)</b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for BatchBALD blog post and paper (active learning)</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" >
+		      <p>This is the code for the blog post <a href="https://oatml.cs.ox.ac.uk/members/andreas_kirsch/blog/2019/06/24/batchbald.html">Human in the Loop: Deep Learning without Wasteful Labelling</a> and the paper <a href="https://oatml.cs.ox.ac.uk/members/andreas_kirsch/publications.html#KAJvAYGBatchBALD">BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning</a>.</p>
+
+		    </p>
+		    <a href="https://github.com/BlackHC/BatchBALD" target="_blank">Code</a>, 
+		    <a href="../../publications.html#KAJvAYGBatchBALD">Publication</a><hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Andreas Kirsch</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+		  </div>
+		</div><!-- reset colours.. -->
+<div class="row" id="my_div_grid" style="visibility: hidden;">
+</div><br>
+<br>
+<header class="align-left">
+	<p style="margin-bottom: 1rem">Blog Posts</p>
+</header><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="ICML_2020" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://oatml.cs.ox.ac.uk/blog/2020/07/10/ICML_2020.html">
+		        <img src="https://oatml.cs.ox.ac.uk//images/icml.jpg" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>13 OATML Conference and Workshop papers at ICML 2020</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>We are glad to share the following 13 papers by OATML authors and collaborators to be presented at this ICML conference and workshops …</p>
+
+	    	        <a href="https://oatml.cs.ox.ac.uk/blog/2020/07/10/ICML_2020.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/lisa_schut/">Lisa Schut</a>, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>, <a href="https://oatml.cs.ox.ac.uk/members/pascal_notin/">Pascal Notin</a>, <a href="index.html">Andreas Kirsch</a>, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/jishnu_mukhoti/">Jishnu Mukhoti</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>10 Jul 2020</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="NeurIPS_2019" style="text-align: center;">
+		    <span class="images">
+		      <a href="../../blog/2019/12/08/NeurIPS_2019.html">
+		        <img src="https://oatml.cs.ox.ac.uk//images/vancouver_image.jpg" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>25 OATML Conference and Workshop papers at NeurIPS 2019</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>We are glad to share the following 25 papers by OATML authors and collaborators to be presented at this NeurIPS conference and workshops. …</p>
+
+	    	        <a href="../../blog/2019/12/08/NeurIPS_2019.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="../angelos_filos/index.html">Angelos Filos</a>, <a href="../sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="../tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="../zac_kenton/index.html">Zac Kenton</a>, <a href="../lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/tom_rainforth/">Tom Rainforth</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>, <a href="index.html">Andreas Kirsch</a>, <a href="https://oatml.cs.ox.ac.uk/members/clare_lyle/">Clare Lyle</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>08 Dec 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="better_intuition_for_information_theory" style="text-align: center;">
+		    <span class="images">
+		      <a href="https://www.blackhc.net/blog/2019/better-intuition-for-information-theory">
+		        <img src="https://oatml.cs.ox.ac.uk//images/better_intuition_for_information_theory_teaser.png" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Better intuition for information theory</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>The following blog post is based on Yeung's beautiful paper “<a href="https://ieeexplore.ieee.org/document/79902">A new
+outlook on Shannon's information
+measures</a>”: it
+shows how we can use concepts from set theory, like unions,
+intersections and differences, to capture information-theoretic
+expressions in an intuitive form that is also correct.</p>
+
+<p>The paper shows one can indeed construct a signed measure that
+consistently maps the sets we intuitively construct to their
+information-theoretic counterparts.</p>
+
+<p>This can help develop new intuitions and insights when solving problems
+using information theory and inform new research. In particular, our
+paper “<a href="https://arxiv.org/abs/1906.08158">BatchBALD: Efficient and Diverse Batch Acquisition for Deep
+Bayesian Active
+Learning</a>” was informed
+by such insights.
+ …</p>
+
+	    	        <a href="https://www.blackhc.net/blog/2019/better-intuition-for-information-theory">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Andreas Kirsch</a>, <span>26 Nov 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div><div class="row" id="my_div_grid">
+		  <div class="2u 12u$(medium)" id="batchbald" style="text-align: center;">
+		    <span class="images">
+		      <a href="../../blog/2019/06/24/batchbald.html">
+		        <img src="https://oatml.cs.ox.ac.uk//blog/2019/06/24/assets/teaser.png" style="width: 100%; max-width: 100%">
+		      </a>
+		    </span>
+		  </div>
+		  <div class="9u 12u$(medium)">
+		    <header>
+		        <!-- <h4><b></b></h4> -->
+		        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Human in the Loop: Deep Learning without Wasteful Labelling</b></p>
+		    </header>
+		    <p style="margin: 0 0 1rem 0" ><p>In <em>Active Learning</em> we use a “human in the loop” approach to data labelling,
+reducing the amount of data that needs to be labelled drastically, and
+making machine learning applicable when labelling costs would be too high otherwise.
+In our paper
+<a href="https://arxiv.org/abs/1906.08158">[1]</a>
+we present BatchBALD: a new <em>practical</em> method for choosing batches of informative points in Deep Active Learning which
+avoids labelling redundancies that plague existing methods. Our approach is based on information theory and expands
+on useful intuitions. We have also made our implementation available on GitHub at
+<a href="https://github.com/BlackHC/BatchBALD">https://github.com/BlackHC/BatchBALD</a>.
+ …</p>
+
+	    	        <a href="../../blog/2019/06/24/batchbald.html">Full post...</a></p>
+		    <hr style="margin: 1rem 0 1rem 0" /><a href="index.html">Andreas Kirsch</a>, <a href="../joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, <span>24 Jun 2019</span></div>
+		  <div class="1u 12u$(medium)">
+		  </div>
+		</div></div>
+		</div>
+	</div>
+</section>
+
+
+		<!-- Contact -->
+		<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header>
+            <!-- <h2><a href="contact.html" id="my_headline">Contact</a></h2> -->
+            <h2>Contact</h2>
+            <div class="row 200%">
+                <div class="6u 12u$(medium) left">
+                    <b>We are located at </b> <br>
+                    <a href="https://goo.gl/maps/Y6xinHJ5T7o" target="_blank">Department of
+                      Computer Science, University of Oxford</a><br>
+                    Wolfson Building<br>
+                    Parks Road<br>
+                    OXFORD<br>
+                    OX1 3QD<br>
+                    UK
+                </div>
+                <div class="6u 12u$(medium)">
+                    <b>Twitter</b>: <a href="https://twitter.com/OATML_Oxford" target="_blank">@OATML_Oxford</a><br>
+                    <b>Github</b>: <a href="https://github.com/oatml" target="_blank">OATML</a><br>
+                    <b>Email</b>: <a href="mailto:oatml@cs.ox.ac.uk">oatml@cs.ox.ac.uk</a>
+                </div>
+            </div>
+            <footer class="align-center">
+                <p></p>
+                <br>
+                <h4>Are you looking to do a PhD in machine learning? Did you do a PhD in another field and want to do a postdoc in machine learning? Would you like to visit the group?</h4>
+                <!-- <a href="contact.html" class="button alt">How to get here</a> -->
+                <a href="https://oatml.cs.ox.ac.uk/apply.html" class="button alt">How to apply</a>
+            </footer>
+            <br>
+            <br>
+        </header>
+    </div>
+</section>
+
+
+		<!-- Footer -->
+					<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/OATML_Oxford" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/OATML" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="contact.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li> -->
+						<li><a href="mailto:oatml@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Yarin Gal. All rights reserved. Template was adapted from <a href="https://templated.co/" target="_blank">Templated</a> and some photos are used from <a href="http://commons.wikimedia.org" target="_blank">Wikimedia</a> under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CCA 3.0</a> licence.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+					<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/skel.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/util.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/main.js"></script>
+
+	</body>
+</html>

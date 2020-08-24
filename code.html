@@ -1,0 +1,676 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+
+
+
+	<title>Reproducibility and Code | OATML | Oxford Applied and Theoretical Machine Learning Group</title>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45108170-4"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-45108170-4');
+	</script>
+	<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+	</script>
+	<meta name="description" content="The Oxford Applied and Theoretical Machine Learning Group (OATML) is a research group within the Department of Computer Science of the University of Oxford led by Prof Yarin Gal. We come from academia (Oxford, Cambridge, MILA, McGill, U of Amsterdam, U of Toronto, Yale, and others) and industry (Google, DeepMind, Twitter, Qualcomm, and startups). We follow pragmatic approaches to fundamental research in machine learning, and work with many practitioners in varied fields (medical, autonomous driving, finance, astrophysics, and more)." />
+	<meta name="keywords" content="Reproducibility and Code | OATML | Oxford Applied and Theoretical Machine Learning Group,OATML,Oxford,Machine learning,ML,Artificial intelligence,AI,Deep learning,DL,Bayesian deep learning,BDL,Bayesian,Bayesian modelling,Probabilistic modelling,Research group,Resarch,Fundamental Research,Pragmatic research,Yarin,Gal,Yarin Gal,yaringal" />
+	<meta charset="utf-8" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://oatml.cs.ox.ac.uk/assets/css/main.css" />
+
+    <link rel="apple-touch-icon-precomposed" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" href="https://oatml.cs.ox.ac.uk/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="https://oatml.cs.ox.ac.uk/images/favicon.ico">
+
+	<meta property="og:title" content="Reproducibility and Code | OATML | Oxford Applied and Theoretical Machine Learning Group" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://oatml.cs.ox.ac.uk/./images/bg.jpg" />
+	<meta property="og:description" content="The Oxford Applied and Theoretical Machine Learning Group (OATML) is a research group within the Department of Computer Science of the University of Oxford led by Prof Yarin Gal. We come from academia (Oxford, Cambridge, MILA, McGill, U of Amsterdam, U of Toronto, Yale, and others) and industry (Google, DeepMind, Twitter, Qualcomm, and startups). We follow pragmatic approaches to fundamental research in machine learning, and work with many practitioners in varied fields (medical, autonomous driving, finance, astrophysics, and more)." />
+	<style type="text/css">
+		.my_headline {
+			color: inherit !important;
+			font-weight: inherit;
+			text-decoration: inherit;
+		}
+		/*.my_logo {display: block !important; margin: auto; padding: 20px 0px 20px 0px; width: 50%;}*/
+		.my_logo {
+			display: block !important;
+			margin: auto;
+			padding: 20px 0px 20px 0px;
+			max-height: 70%;
+		}
+		.banner > article .inner {height: 100%}
+		.banner > article .inner > header {height: 85%}
+		.banner_top {height: 15%}
+		body.is-mobile .banner_top {height: 5%}
+		@media screen and (max-width: 980px) {
+			.banner_top {height: 10%}
+			.my_logo {max-height: 50%}
+		}
+		.my_box_image {overflow: hidden; max-height: 50px;}
+		.my_news_div {padding: 0 !important}
+		.my_news_div div {margin: 0em 1em 1em 1em}
+		.my_news_div div header h4 {
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #484848 !important;
+			word-spacing: 3pt;
+		}
+		.my_news_div div header p {
+			font-size: 0.9em;
+			color: #aaa !important;
+			margin-top: -0.6em;
+			margin-bottom: 0.1em;
+		}
+		.my_news_span {
+			padding: 0 !important;
+			background-color: transparent !important;
+		}
+		.my_news_span img {
+			border-radius: 100%;
+			width: 100%;
+			border: solid 0.5em rgba(144, 144, 144, 0.25);
+		}
+		div #my_div_grid:nth-child(2n) {
+			background-color: rgba(0, 0, 0, 0.075);
+		}
+		div #my_div_grid {
+			padding: 1rem 0rem 1rem 0rem;
+			margin: 0;
+		}
+		.wrapper.style3.pageheader {
+			background-size: 100% !important;
+			background-position: top !important;
+			background-image: url('https://oatml.cs.ox.ac.uk/images/bg_crop.jpg') !important;
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			.wrapper.style3.pageheader {background-size: 200% !important;}
+			.ox-link {display: none;}
+			.group-title-link {display: none;}
+			.group-title-link-short {display: inline;}
+			div.my_news_div div.fit {
+				text-align : inherit !important;
+			}
+			span.my_news_span.image.right {
+				float : left;
+				margin: 0 1.5rem 1rem 0;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 435px) {
+			.my_header {
+				min-height: 120pt !important;
+			}
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) {
+			.group-title-link-short {display: none;}
+			.group-title-link {
+				display: inline;
+				vertical-align: bottom !important;
+				border-left: 2px solid white;
+				height: 500px;
+				padding: 0px 0px 0px 10px;
+				margin: 0px 0px 0px 10px;
+			}
+		}
+		/* Mobile screens */
+		@media screen and (max-width: 980px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_mobile.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_mobile.jpg') !important;
+				}
+			
+		}
+		/* Desktop screens */
+		@media screen and (min-width: 980px) and (max-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2.jpg') !important;
+				}
+			
+		}
+		/* Huge screens */
+		@media screen and (min-width: 1920px) {
+			
+				#banner_image_banner_uncertainty_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_uncertainty_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_uncertainty_2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oxford1 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oxford1_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oatmeal2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oatmeal2_huge.jpg') !important;
+				}
+			
+				#banner_image_banner_oats_2 {
+					background-image: url('https://oatml.cs.ox.ac.uk/images/banner/banner_oats_2_huge.jpg') !important;
+				}
+			
+		}
+		/* Mobile screens */
+		@media screen and (max-height: 600px) {
+			.indicators {display: none;}
+		}
+	</style>
+
+	</head>
+	<body>
+
+		<!-- Header -->
+					<header id="header" class="alt">
+				<div class="logo">
+					<img src="https://oatml.cs.ox.ac.uk/images/cs_logo.png" class="ox-link" style="height: 58px; vertical-align: top !important" alt="University of Oxford Department of Computer Science" usemap="#compscimap" />
+					<map name="compscimap" id="compscimap">
+                                <area shape="rect" coords="0,0,55,55" href="http://www.ox.ac.uk/" alt="University of Oxford" title="University of Oxford"/>
+                                <area shape="rect" coords="65,0,170,55" href="http://www.cs.ox.ac.uk/" alt="Department of Computer Science - Home" title="Department of Computer Science - Home"/>
+                    </map>
+					<a href="index.html" class="group-title-link">
+						<!-- <img src="images/logo.png" style="height: 55px" alt="Group Home"> -->
+						Group Home
+					</a>
+					<a href="index.html" class="group-title-link-short">
+						Home
+					</a>
+				</div>
+				<a href="code.html#menu">Menu</a>
+			</header>
+
+
+		<!-- Nav -->
+					<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="news.html">News</a></li>
+					<li><a href="publications.html">Publications</a></li>
+					<li><a href="code.html">Reproducibility and Code</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="members.html">Group Members</a></li>
+					<!-- <li><a href="research.html">Research Themes</a></li> -->
+					<li><a href="https://oatml.cs.ox.ac.uk/apply.html">Apply to the Group</a></li>
+					<!-- <li><a href="contact.html">Contact</a></li> -->
+				</ul>
+			</nav>
+
+
+		<!-- One -->
+					<section id="One" class="wrapper style3 pageheader">
+				<div class="inner">
+					<header class="align-center">
+						<p>Oxford Applied and Theoretical Machine Learning Group</p>
+						<h1>OATML</h1>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<header id="title" class="align-center">
+								<p>Reproducibility and Code</p>
+								<!-- <h2>Lorem ipsum dolor</h2> -->
+							</header>
+							
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="oatomobile" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/OATML/oatomobile" target="_blank">
+        <img src="images/carla.jpg" title="OATomobile: A research framework for autonomous driving" alt="OATomobile: A research framework for autonomous driving" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>OATomobile: A research framework for autonomous driving</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>OATomobile: A research framework for autonomous driving</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>OATomobile is a library for autonomous driving research. OATomobile strives to expose simple, efficient, well-tuned and readable agents, that serve both as reference implementations of popular algorithms and as strong baselines, while still providing enough flexibility to do novel research.</p>
+
+    </p>
+    <a href="https://github.com/OATML/oatomobile" target="_blank">Code</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/angelos_filos/index.html">Angelos Filos</a>, <a href="https://oatml.cs.ox.ac.uk/members/panagiotis_tigas/">Panagiotis Tigas</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#oatomobile"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="KATOMA" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/BlackHC/toma" target="_blank">
+        <img src="images/CUDA.png" title="Torch Memory-adaptive Algorithms (TOMA)" alt="Torch Memory-adaptive Algorithms (TOMA)" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Torch Memory-adaptive Algorithms (TOMA)</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Torch Memory-adaptive Algorithms (TOMA)</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>A collection of helpers to make it easier to write code that adapts to the available (CUDA) memory. Specifically, it retries code that fails due to OOM (out-of-memory) conditions and lowers batchsizes automatically.</p>
+
+<p>To avoid failing over repeatedly, a simple cache is implemented that memorizes that last successful batchsize given the call and available free memory.</p>
+
+    </p>
+    <a href="https://github.com/BlackHC/toma" target="_blank">Code</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/andreas_kirsch/index.html">Andreas Kirsch</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#KATOMA"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="KABatchBALDredux" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/BlackHC/batchbald_redux" target="_blank">
+        <img src="images/batchbald_teaser.png" title="Reusable BatchBALD implementation (active learning)" alt="Reusable BatchBALD implementation (active learning)" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Reusable BatchBALD implementation (active learning)</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Reusable BatchBALD implementation (active learning)</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>Clean reimplementation of “<a href="publications.html#KAJvAYGBatchBALD">BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning</a>”.</p>
+
+    </p>
+    <a href="https://github.com/BlackHC/batchbald_redux" target="_blank">Code</a>, 
+    <a href="publications.html#KAJvAYGBatchBALD">Publication</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/andreas_kirsch/index.html">Andreas Kirsch</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#KABatchBALDredux"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="JvACIFARResnet" style="text-align: center;">
+    <span class="images">
+      <a href="https://gist.github.com/y0ast/d91d09565462125a1eb75acc65da1469" target="_blank">
+        <img src="images/neural_network-square.jpg" title="Getting high accuracy on CIFAR-10 is not straightforward. This self-contained script gets to 94% accuracy with a minimal setup." alt="Getting high accuracy on CIFAR-10 is not straightforward. This self-contained script gets to 94% accuracy with a minimal setup." style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Getting high accuracy on CIFAR-10 is not straightforward. This self-contained script gets to 94% accuracy with a minimal setup.</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Getting high accuracy on CIFAR-10 is not straightforward. This self-contained script gets to 94% accuracy with a minimal setup.</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p><a href="members/joost_van_amersfoort/index.html">Joost van Amersfoort</a> wrote a self-contained, 150 line script that trains a ResNet-18 to ~94% accuracy on CIFAR-10. Useful for obtaining a strong baseline with minimal tricks.</p>
+
+    </p>
+    <a href="https://gist.github.com/y0ast/d91d09565462125a1eb75acc65da1469" target="_blank">Code</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/joost_van_amersfoort/index.html">Joost van Amersfoort</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#JvACIFARResnet"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="YG_MLSS_2019" style="text-align: center;">
+    <span class="images">
+      <a href="http://bdl101.ml/" target="_blank">
+        <img src="images/uncertainty_fig-square.jpg" title="Machine Learning Summer School (MLSS) Moscow: Bayesian Deep Learning 101" alt="Machine Learning Summer School (MLSS) Moscow: Bayesian Deep Learning 101" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Machine Learning Summer School (MLSS) Moscow: Bayesian Deep Learning 101</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Machine Learning Summer School (MLSS) Moscow: Bayesian Deep Learning 101</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>Slide decks from the Bayesian Deep Learning talks at the <a href="https://mlss2019.skoltech.ru/">Machine Learning Summer School (MLSS) Moscow</a>, with uncertainty demoes and practical tutorials in sampling functions and active learning (practical credit: Ivan Nazarov).</p>
+
+    </p>
+    <a href="http://bdl101.ml/" target="_blank">Code</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#YG_MLSS_2019"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="AKtfpyth" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/BlackHC/TfPyTh" target="_blank">
+        <img src="images/neural_network-square.jpg" title="Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters)" alt="Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters)" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters)</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Putting TensorFlow back in PyTorch, back in TensorFlow (differentiable TensorFlow PyTorch adapters)</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>Do you have a codebase that uses TensorFlow and one that uses PyTorch and want to train a model that uses both end-to-end?
+This library makes it possible without having to rewrite either codebase!
+It allows you to wrap a TensorFlow graph to make it callable (and differentiable) through PyTorch, and vice-versa, using simple functions.</p>
+
+    </p>
+    <a href="https://github.com/BlackHC/TfPyTh" target="_blank">Code</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/andreas_kirsch/index.html">Andreas Kirsch</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#AKtfpyth"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="KAJvAYGBatchBALD" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/BlackHC/BatchBALD" target="_blank">
+        <img src="images/batchbald_teaser.png" title="Code for BatchBALD blog post and paper (active learning)" alt="Code for BatchBALD blog post and paper (active learning)" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Code for BatchBALD blog post and paper (active learning)</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for BatchBALD blog post and paper (active learning)</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>This is the code for the blog post <a href="blog/2019/06/24/batchbald.html">Human in the Loop: Deep Learning without Wasteful Labelling</a> and the paper <a href="publications.html#KAJvAYGBatchBALD">BatchBALD: Efficient and Diverse Batch Acquisition for Deep Bayesian Active Learning</a>.</p>
+
+    </p>
+    <a href="https://github.com/BlackHC/BatchBALD" target="_blank">Code</a>, 
+    <a href="publications.html#KAJvAYGBatchBALD">Publication</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/andreas_kirsch/index.html">Andreas Kirsch</a>, <a href="members/joost_van_amersfoort/index.html">Joost van Amersfoort</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#KAJvAYGBatchBALD"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="JvAGlow" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/y0ast/Glow-PyTorch" target="_blank">
+        <img src="images/neural_network.jpg" title="Reproducing the results from "Do Deep Generative Models Know What They Don't Know?"" alt="Reproducing the results from "Do Deep Generative Models Know What They Don't Know?"" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Reproducing the results from "Do Deep Generative Models Know What They Don't Know?"</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Reproducing the results from "Do Deep Generative Models Know What They Don't Know?"</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>PyTorch implementation of Glow that reproduces the results from “Do Deep Generative Models Know What They Don’t Know?” (<a href="https://arxiv.org/abs/1810.09136" target="_blank">Nalisnick et al.</a>); Includes a pretrained model, evaluation notebooks and training code!</p>
+
+    </p>
+    <a href="https://github.com/y0ast/Glow-PyTorch" target="_blank">Code</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/joost_van_amersfoort/index.html">Joost van Amersfoort</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#JvAGlow"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="bdlb" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/OATML/bdl-benchmarks" target="_blank">
+        <img src="images/BDLB3.PNG" title="Code for Bayesian Deep Learning Benchmarks" alt="Code for Bayesian Deep Learning Benchmarks" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Code for Bayesian Deep Learning Benchmarks</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for Bayesian Deep Learning Benchmarks</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>In order to make real-world difference with <strong>Bayesian Deep Learning</strong> (BDL) tools, the tools must scale to real-world settings. And for that we, the research community, must be able to evaluate our inference tools (and iterate quickly) with real-world benchmark tasks. We should be able to do this without necessarily worrying about application-specific domain knowledge, like the expertise often required in medical applications for example. We require benchmarks to test for inference robustness, performance, and accuracy, in addition to cost and effort of development. These benchmarks should be at a variety of scales, ranging from toy MNIST-scale benchmarks for fast development cycles, to large data benchmarks which are truthful to real-world applications, capturing their constraints.</p>
+
+    </p>
+    <a href="https://github.com/OATML/bdl-benchmarks" target="_blank">Code</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/angelos_filos/index.html">Angelos Filos</a>, <a href="members/sebastian_farquhar/index.html">Sebastian Farquhar</a>, <a href="https://oatml.cs.ox.ac.uk/members/aidan_gomez/">Aidan Gomez</a>, <a href="members/tim_rudner/index.html">Tim G. J. Rudner</a>, <a href="members/zac_kenton/index.html">Zac Kenton</a>, <a href="members/lewis_smith/index.html">Lewis Smith</a>, <a href="https://oatml.cs.ox.ac.uk/members/milad_alizadeh/">Milad Alizadeh</a>, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#bdlb"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="Cobb2019Ensemble" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/exoml/plan-net" target="_blank">
+        <img src="images/inara-results-12mol.png" title="Code for "An Ensemble of Bayesian Neural Networks for Exoplanetary Atmospheric Retrieval"" alt="Code for "An Ensemble of Bayesian Neural Networks for Exoplanetary Atmospheric Retrieval"" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Code for "An Ensemble of Bayesian Neural Networks for Exoplanetary Atmospheric Retrieval"</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for "An Ensemble of Bayesian Neural Networks for Exoplanetary Atmospheric Retrieval"</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>Recent work demonstrated the potential of using machine learning algorithms for atmospheric retrieval by implementing a random forest to perform retrievals in seconds that are consistent with the traditional, computationally-expensive nested-sampling retrieval method. We expand upon their approach by presenting a new machine learning model, 	exttt{plan-net}, based on an ensemble of Bayesian neural networks that yields more accurate inferences than the random forest for the same data set of synthetic transmission spectra.</p>
+
+    </p>
+    <a href="https://github.com/exoml/plan-net" target="_blank">Code</a>, 
+    <a href="publications.html#Cobb2019Ensemble">Publication</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    Adam D. Cobb, Michael D. Himes, Frank Soboczenski, Simone Zorzan, Molly D. O'Beirne, Atılım Güneş Baydin, <a href="https://oatml.cs.ox.ac.uk/members/yarin/">Yarin Gal</a>, Shawn D. Domagal-Goldman, Giada N. Arney, Daniel Angerhausen
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#Cobb2019Ensemble"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+<div class="row" id="my_div_grid">
+  <div class="2u 12u$(medium)" id="Rudner2019Multi3Net" style="text-align: center;">
+    <span class="images">
+      <a href="https://github.com/FrontierDevelopmentLab/multi3net" target="_blank">
+        <img src="images/multi3net.jpg" title="Code for Multi&sup3Net (multitemporal satellite imagery segmentation)" alt="Code for Multi&sup3Net (multitemporal satellite imagery segmentation)" style="width: 100%; max-width: 100%">
+      </a>
+    </span>
+  </div>
+  <div class="9u 12u$(medium)">
+    <header>
+        <!-- <h4><b>Code for Multi&sup3Net (multitemporal satellite imagery segmentation)</b></h4> -->
+        <p style="font-size: 1rem; text-transform: none; letter-spacing: 0.07rem"><b>Code for Multi&sup3Net (multitemporal satellite imagery segmentation)</b></p>
+    </header>
+    <p style="margin: 0 0 1rem 0" >
+      <p>We propose a novel approach for rapid segmentation of flooded buildings by fusing multiresolution, multisensor, and multitemporal satellite imagery in a convolutional neural network. Our model significantly expedites the generation of satellite imagery-based flood maps, crucial for first responders and local authorities in the early stages of flood events. By incorporating multitemporal satellite imagery, our model allows for rapid and accurate post-disaster damage assessment and can be used by governments to better coordinate medium- and long-term financial assistance programs for affected areas. The network consists of multiple streams of encoder-decoder architectures that extract spatiotemporal information from medium-resolution images and spatial information from high-resolution images before fusing the resulting representations into a single medium-resolution segmentation map of flooded buildings. We compare our model to state-of-the-art methods for building footprint segmentation as well as to alternative fusion approaches for the segmentation of flooded buildings and find that our model performs best on both tasks. We also demonstrate that our model produces highly accurate segmentation maps of flooded buildings using only publicly available medium-resolution data instead of significantly more detailed but sparsely available very high-resolution data. We release the first open-source dataset of fully preprocessed and labeled multiresolution, multispectral, and multitemporal satellite images of disaster sites along with our source code.</p>
+
+    </p>
+    <a href="https://github.com/FrontierDevelopmentLab/multi3net" target="_blank">Code</a>, 
+    <a href="publications.html#Rudner2019Multi3Net">Publication</a>
+    <hr style="margin: 1rem 0 1rem 0" />
+    
+    <a href="members/tim_rudner/index.html">Tim G. J. Rudner</a>, Marc Rußwurm, Jakub Fil, Ramona Pelich, Benjamin Bischke, Veronika Kopackova, Piotr Bilinski
+  </div>
+  <div class="1u 12u$(medium)">
+    <a href="code.html#Rudner2019Multi3Net"><span class="image"><img src="images/link-to-here.png" title="Link to this" alt="Link to this" style="max-width: 15px"></span></a>
+  </div>
+</div>
+
+
+<hr>
+<h2 style="text-align: center;">
+    More software here: <a
+        href="http://www.cs.ox.ac.uk/people/yarin.gal/website/software.html" target="_blank"><i>software</i></a>
+</h2>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Contact -->
+		<section id="two" class="wrapper style3">
+    <div class="inner">
+        <header>
+            <!-- <h2><a href="contact.html" id="my_headline">Contact</a></h2> -->
+            <h2>Contact</h2>
+            <div class="row 200%">
+                <div class="6u 12u$(medium) left">
+                    <b>We are located at </b> <br>
+                    <a href="https://goo.gl/maps/Y6xinHJ5T7o" target="_blank">Department of
+                      Computer Science, University of Oxford</a><br>
+                    Wolfson Building<br>
+                    Parks Road<br>
+                    OXFORD<br>
+                    OX1 3QD<br>
+                    UK
+                </div>
+                <div class="6u 12u$(medium)">
+                    <b>Twitter</b>: <a href="https://twitter.com/OATML_Oxford" target="_blank">@OATML_Oxford</a><br>
+                    <b>Github</b>: <a href="https://github.com/oatml" target="_blank">OATML</a><br>
+                    <b>Email</b>: <a href="mailto:oatml@cs.ox.ac.uk">oatml@cs.ox.ac.uk</a>
+                </div>
+            </div>
+            <footer class="align-center">
+                <p></p>
+                <br>
+                <h4>Are you looking to do a PhD in machine learning? Did you do a PhD in another field and want to do a postdoc in machine learning? Would you like to visit the group?</h4>
+                <!-- <a href="contact.html" class="button alt">How to get here</a> -->
+                <a href="https://oatml.cs.ox.ac.uk/apply.html" class="button alt">How to apply</a>
+            </footer>
+            <br>
+            <br>
+        </header>
+    </div>
+</section>
+
+
+		<!-- Footer -->
+					<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://twitter.com/OATML_Oxford" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://github.com/OATML" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+						<!-- <li><a href="contact.html" class="icon fa-envelope-o"><span class="label">Email</span></a></li> -->
+						<li><a href="mailto:oatml@cs.ox.ac.uk" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Yarin Gal. All rights reserved. Template was adapted from <a href="https://templated.co/" target="_blank">Templated</a> and some photos are used from <a href="http://commons.wikimedia.org" target="_blank">Wikimedia</a> under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CCA 3.0</a> licence.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+					<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/jquery.scrollex.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/skel.min.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/util.js"></script>
+			<script src="https://oatml.cs.ox.ac.uk/assets/js/main.js"></script>
+
+	</body>
+</html>
